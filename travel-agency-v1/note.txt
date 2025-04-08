@@ -1,0 +1,92 @@
+A ajouter pour possibilities côté css pour voir une autre approche :
+
+/* SECTION POSSIBILITIES */
+#possibilities {
+  background-color: #efefef;
+  padding: 50px 0;
+}
+
+/* WRAPPER GLOBAL */
+#possibilities .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* pour les petits écrans */
+}
+
+/* CHAQUE ARTICLE */
+#possibilities article {
+  display: flex;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 500px;
+  min-width: 300px;
+  flex: 1 1 45%; /* largeur flexible */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* OVERLAY TEXTE À GAUCHE */
+#possibilities .overlay {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* IMAGE À DROITE */
+#possibilities article img {
+  width: 50%;
+  object-fit: cover;
+  height: auto;
+}
+
+/* TEXTES */
+#possibilities .overlay h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#possibilities .overlay p {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+#possibilities .button-2 {
+  background-color: orange;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#possibilities .button-2:hover {
+  background-color: darkorange;
+}
+
+/* RESPONSIVE - MOBILES */
+@media (max-width: 768px) {
+  #possibilities .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #possibilities article {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #possibilities article img {
+    width: 100%;
+    height: auto;
+  }
+
+  #possibilities .overlay {
+    text-align: center;
+    align-items: center;
+  }
+}
