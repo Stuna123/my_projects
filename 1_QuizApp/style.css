@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+
+:root {
+    --box-shadow: rgba(25, 234, 32, 0.24) 0px 3px 8px;
+    --green-color: #04AA6D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; /* remove underline*/
+    list-style: none; /* remove le puce  */
+    /* background-color: rgb(26, 24, 24); */
+}
+
+.quiz {
+    background-color: rgb(26, 24, 24);
+    padding: 30px;
+}
+
+.heading {
+    margin: 10px auto 40px auto;
+}
+
+.heading .title {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.heading .subtitle {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;    
+}
+
+.result {
+    text-align: center;
+    min-width: 350px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: var(--box-shadow);
+}
+
+.result p:first-child {
+    padding: 10px 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.reload button {
+    background-color: var(--green-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    border: 0px;
+}
+
+.reload button:hover {
+    background-color: #087e53;
+    cursor: pointer;
+}
+
+.quiz-form {
+    max-width: 100%;
+    margin: auto;
+}
+
+.question {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    box-shadow: var(--box-shadow);
+}
+
+.question > * {
+    font-size: 15px;
+}
+
+.option {
+    margin-left: 15px;
+}
+
+.correct {
+    background-color: #71bea2;
+}
+
+.wrong {
+    background-color: #e35238;
+}
+
+.submit {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.submit input {
+    background-color: var(--green-color);
+    color:#ffffff;
+    padding: 5px 25px;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.submit input:hover {
+    background-color: #087e53;
+    cursor: pointer;
+}
