@@ -1,0 +1,742 @@
+Video 1
+    HTML : 
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Budget tracker</title>
+
+                <link rel="stylesheet" href="style.css">
+
+            </head>
+
+            <body>
+                <main>
+                    <div class="wrap">
+                        <section class="heading">
+                            <p class="title"> Budget tracker </p>
+                            <p class="subtitle"> Manager And Search Your Pending Tasks in Clicks </p>
+                        </section>
+                        
+                        <section class="task-manager">
+                            <div class="search-box">
+                                <form class="search">
+                                    <input type="text" name="task" autocomplete="off" placeholder="Search task">
+                                    <i class="bi bi-x-circle reset"></i>
+                                </form>
+                            </div>
+                            <div class="task-box">
+                                <ul class="tasks">
+                                    <li>
+                                        <span>Task 1</span>
+                                        <i class="bi bi-trash-fill delete"></i>
+                                    </li>
+
+                                    <li>
+                                        <span>Task 2</span>
+                                        <i class="bi bi-trash-fill delete"></i>
+                                    </li>
+
+                                    <li>
+                                        <span>Task 3</span>
+                                        <i class="bi bi-trash-fill delete"></i>
+                                    </li>
+                                </ul>
+                                <form class="add" name="task" placeholder="add task" autocomplete="off">
+                                    <input type="text" name="task" placeholder="add task" autocomplete="off">
+                                    <input type="submit" value="Add">
+                                </form>
+                            </div>
+                            <div class="message">
+                                <span>You have 3 pending tasks.</span>
+                                <button class="clear">Clear All</button>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+
+                <script src="script.js"></script>
+            </body>
+        </html>
+
+    CSS : 
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+        :root {
+            --box-shadow: rgba(25, 234, 32, 0.24) 0px 3px 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+Video 2
+    HTML : idem like video 1
+    CSS : 
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+        :root {
+            /*--box-shadow: rgba(25, 234, 32, 0.24) 0px 3px 8px;*/
+            --box-shadow: rgb(26, 24, 24);
+            --text-Color: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+        /***************************************** Wrap *****************************************/
+        .wrap {
+            background-color: var(--box-shadow);
+            color: var(--text-Color);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        /***************************************** Heading *****************************************/
+        .heading {
+            margin: 10px auto 40px auto; 
+        }
+
+        .heading .title {
+            font-size: 30px;
+            color: #ffffff;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .heading .subtitle {
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        /***************************************** Task-manager *****************************************/
+        .task-manager {
+            min-width: 350px;
+            max-width: 450px;
+            margin: auto;
+        }
+
+        .search-box, .task-box, .message {
+            background-color: #484040;
+            padding: 20px 25px;
+            border-radius: 3px;
+            margin: 20px 0px;
+        }
+
+        /***************************************** Search *****************************************/
+        .search-box .search{
+            display: flex;
+            margin: 10px 0px;
+        }
+
+        .search-box input {
+            border-radius: 3px;
+            width: 100%;
+            margin-right: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .search-box i.reset {
+            font-size: 24px;
+            height: 100%;
+            padding: 10px 0px;
+            cursor: pointer;
+        }
+
+        /***************************************** Task-box *****************************************/
+        .task-box .tasks {
+            margin: 20px 0px;
+        }
+
+        .task-box li {
+            background-color: #1d1c1f;
+            margin: 10px 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .task-box span {
+            padding: 10px;
+        }
+
+        .task-box i.delete {
+            background-color:#840622;
+            border-radius: 0px 2px 2px 0px;
+            height: 100%;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .task-box i.delete:hover {
+            background-color:#D82148;
+        }
+
+        .task-box .add {
+            display: flex;
+            margin: 10px 0px;
+        }
+
+        .task-box input[type="text"] {
+            border-radius: 3px;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .task-box input[type="submit"] {
+            background-color: rgb(128, 113, 142);
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .task-box input[type="submit"]:hover {
+            background-color: rgb(217, 191, 242);
+            cursor: pointer;
+        }
+        /***************************************** Message *****************************************/
+        .message {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .message .clear {
+            background-color: rgb(48, 48, 234);
+            border-radius: 3px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        .message .clear:hover {
+            background-color: #2f62a9;
+        }
+
+Video 3 : Add task
+    HTML & CSS : like video 1,2
+    JS :
+        Exemple 1 :
+            const addForm = document.querySelector(".add");
+
+            addForm.addEventListener("submit", event => {
+                event.preventDefault();
+                const value = addForm.task.value.trim(); // trim pour enlever les espaces
+
+                if(value.length)
+                    console.log(value)
+            })
+
+        Exemple 2 :
+            const addForm   = document.querySelector(".add");
+            const tasks     = document.querySelector(".tasks");
+
+            addForm.addEventListener("submit", event => {
+                event.preventDefault();
+                const value = addForm.task.value.trim(); // trim pour enlever les espaces
+
+                if(value.length) {
+                    console.log(value);
+                    tasks.innerHTML += `<li> ABC </li>`
+                    addForm.reset();
+                }
+            })
+
+        Exemple 3 : 
+            const addForm   = document.querySelector(".add");
+            const tasks     = document.querySelector(".tasks");
+
+            addForm.addEventListener("submit", event => {
+                event.preventDefault();
+                const value = addForm.task.value.trim(); // trim pour enlever les espaces
+
+                if(value.length) {
+                    tasks.innerHTML +=  
+                    `<li> 
+                        <span> ${value} </span> 
+                        <i class="bi bi-trash-fill delete"></i>
+                    </li>
+                    `
+                    addForm.reset();
+                }
+            })
+
+Video 4 : Delete task
+    JS : 
+    Exemple 1 : 
+        const addForm   = document.querySelector(".add");
+        const tasks     = document.querySelector(".tasks");
+
+        addForm.addEventListener("submit", event => {
+            event.preventDefault();
+            const value = addForm.task.value.trim(); // trim pour enlever les espaces
+
+            if(value.length) {
+                console.log(value);
+                tasks.innerHTML +=  
+                `<li> 
+                    <span> ${value} </span> 
+                    <i class="bi bi-trash-fill delete"></i>
+                </li>
+                `
+                addForm.reset();
+            }
+        })
+
+        // check if we can click element or our task element (<li>)
+        task.addEventListener("click", event => {
+            console.log(event.target)
+        })
+
+    Exemple 2 :
+        const addForm   = document.querySelector(".add");
+        const tasks     = document.querySelector(".tasks");
+
+        // add task
+        addForm.addEventListener("submit", event => { ... })
+
+        // remove
+        tasks.addEventListener("click", event => {
+            // you can also write another name of the balise like "bi-trash-fill" and it will work
+            if(event.target.classList.contains("delete"))
+                event.target.parentElement.remove()
+        })
+
+    Exemple 3 :
+        const addForm   = document.querySelector(".add");
+        const tasks     = document.querySelector(".tasks");
+        const clearAll  = document.querySelector(".clear"); // we add
+
+        addForm.addEventListener("submit", event => { ... }) // voir exemple 1
+
+        tasks.addEventListener("click", event => { ... }) // voir exemple 2
+
+        clearAll.addEventListener("click", event => {
+            const taskItems = document.querySelectorAll("li");
+            taskItems.forEach(item => {
+                item.remove()
+            })
+        })
+
+Video 5 : Update task
+    In HTML, we delete the span because we will change that dynamically
+        <body>
+            <main>
+                <div class="wrap">
+                    <section class="heading">
+                        <p class="title"> Todo List Manager </p>
+                        <p class="subtitle"> Manager And Search Your Pending Tasks in Clicks </p>
+                    </section>
+                    
+                    <section class="task-manager">
+                        <div class="search-box">
+                            <form class="search">
+                                <input type="text" name="task" autocomplete="off" placeholder="Search task">
+                                <i class="bi bi-x-circle reset"></i>
+                            </form>
+                        </div>
+                        <div class="task-box">
+                            <ul class="tasks">
+                                <li>
+                                    <span>Task 1</span>
+                                    <i class="bi bi-trash-fill delete"></i>
+                                </li>
+
+                                <li>
+                                    <span>Task 2</span>
+                                    <i class="bi bi-trash-fill delete"></i>
+                                </li>
+
+                                <li>
+                                    <span>Task 3</span>
+                                    <i class="bi bi-trash-fill delete"></i>
+                                </li>
+                            </ul>
+                            <form class="add" name="task" placeholder="add task" autocomplete="off">
+                                <input type="text" name="task" placeholder="Add task" autocomplete="off">
+                                <input type="submit" value="Add">
+                            </form>
+                        </div>
+                        <div class="message">
+                            <span></span>
+                            <button class="clear">Clear All</button>
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+            <script src="script.js"></script>
+        </body>
+
+    JS :
+    // Ici, nous allons ajouter la fonction dans chaque event pour voir l'update directement.
+    const addForm   = document.querySelector(".add");
+    const tasks     = document.querySelector(".tasks");
+    const clearAll  = document.querySelector(".clear");
+    const messageSpan = document.querySelector(".message span");
+
+    // Cette fonction mettra à jour tous les changements qui seront fait 
+    function updateMessage() {
+        const textLength = tasks.children.length;
+        messageSpan.textContent = `You have 1 pending tasks.`
+    }
+
+    addForm.addEventListener("submit", event => {
+        event.preventDefault();
+        const value = addForm.task.value.trim(); // trim pour enlever les espaces
+
+        if(value.length) {
+            console.log(value);
+            tasks.innerHTML +=  
+            `<li> 
+                <span> ${value} </span> 
+                <i class="bi bi-trash-fill delete"></i>
+            </li>
+            `
+            addForm.reset();
+            updateMessage(); // On appel la fonction ici car les changements ont été fait
+        }
+    })
+
+    tasks.addEventListener("click", event => {
+        if(event.target.classList.contains("delete"))
+            event.target.parentElement.remove();
+            updateMessage();
+    })
+
+    clearAll.addEventListener("click", event => {
+        const taskItems = document.querySelectorAll("li");
+        taskItems.forEach(item => {
+            item.remove()
+            updateMessage();
+        })
+    })
+
+Video 6 : Search task
+    HTML : nothing change
+    CSS : 
+        //  On ajoute une classe hide pour cacher les éléments
+        //  Lorsqu'on fait la recherche, et qu'on trouve un élément, 
+            les autres sont cachés  
+        .hide {
+            display: none !important;
+        }
+    JS : 
+    Exemple 1 :
+        const addForm   = document.querySelector(".add");
+        const tasks     = document.querySelector(".tasks");
+        const clearAll  = document.querySelector(".clear");
+        const messageSpan   = document.querySelector(".message span");
+        const searchForm    = document.querySelector(".search")
+
+        // Cette fonction mettra à jour tous les changements qui seront fait 
+        function updateMessage() { ... }
+        updateMessage();
+
+        addForm.addEventListener("submit", event => { ... })
+
+        tasks.addEventListener("click", event => { ... })
+
+        clearAll.addEventListener("click", event => {...})
+
+        // keyup recupère tous les entré du clavier
+        searchForm.addEventListener("keyup", event => {
+            const term = searchForm.task.value.trim(); 
+            console.log(term);
+        })
+
+    Exemple 2 :
+        const addForm   = document.querySelector(".add");
+        const tasks     = document.querySelector(".tasks");
+        const clearAll  = document.querySelector(".clear");
+        const messageSpan   = document.querySelector(".message span");
+        const searchForm    = document.querySelector(".search");
+
+        // Cette fonction mettra à jour tous les changements qui seront fait 
+        function updateMessage() { ... }
+        updateMessage();
+
+        addForm.addEventListener("submit", event => { ... })
+
+        tasks.addEventListener("click", event => { ... })
+
+        clearAll.addEventListener("click", event => {...})
+
+        function filterTask(term) {
+            // on recupère tous les li de notre html
+            // Mais le problem on ne peut pas touché les éléments d'où, transfomer en Array.
+                Voir exemple 3
+            console.log(tasks.children) 
+        }
+
+        // keyup recupère tous les entré du clavier
+        searchForm.addEventListener("keyup", event => {
+            const term = searchForm.task.value.trim(); 
+            filterTask(term)
+        })
+
+    Exemple 3 :
+
+        const addForm   = document.querySelector(".add");
+        const tasks     = document.querySelector(".tasks");
+        const clearAll  = document.querySelector(".clear");
+        const messageSpan   = document.querySelector(".message span");
+        const searchForm    = document.querySelector(".search");
+
+        // Cette fonction mettra à jour tous les changements qui seront fait 
+        function updateMessage() { ... }
+        updateMessage();
+
+        addForm.addEventListener("submit", event => { ... })
+
+        tasks.addEventListener("click", event => { ... })
+
+        clearAll.addEventListener("click", event => {...})
+
+        function filterTask(term) {
+            // On transforme en tableau sinon on peut pas utiliser map ou filter
+            // Now, on peut avoir accès aux éléments du tableau
+            console.log(Array.from(tasks.children)); 
+        }
+
+        // keyup recupère tous les entré du clavier
+        searchForm.addEventListener("keyup", event => {
+            const term = searchForm.task.value.trim(); 
+            filterTask(term)
+        })
+
+    Exemple 4 : 
+        const addForm   = document.querySelector(".add");
+        const tasks     = document.querySelector(".tasks");
+        const clearAll  = document.querySelector(".clear");
+        const messageSpan   = document.querySelector(".message span");
+        const searchForm    = document.querySelector(".search");
+
+        // Cette fonction mettra à jour tous les changements qui seront fait 
+        function updateMessage() { ... }
+        updateMessage();
+
+        addForm.addEventListener("submit", event => { ... })
+
+        tasks.addEventListener("click", event => { ... })
+
+        clearAll.addEventListener("click", event => {...})
+
+        function filterTask(term) {
+            // On transforme en tableau sinon on peut pas utiliser map ou filter
+            const list = Array.from(tasks.children)
+            .filter(task => {
+                // On retourne les autres éléments qui seront caché en mettant de côté ce qui est écrit
+                // Autrement dit, tout ce que l'utilisateur va entrer dans l'input, 
+                    si il trouve ce qu'il cherche, tout ce qui reste dans la liste seront caché. 
+                return !task.textContent.includes(term); 
+            });
+            console.log(list);
+
+        }
+
+        // keyup recupère tous les entré du clavier
+        searchForm.addEventListener("keyup", event => {
+            const term = searchForm.task.value.trim(); 
+            filterTask(term)
+        })
+
+    Exemple 5 :
+        const addForm   = document.querySelector(".add");
+        const tasks     = document.querySelector(".tasks");
+        const clearAll  = document.querySelector(".clear");
+        const messageSpan   = document.querySelector(".message span");
+        const searchForm    = document.querySelector(".search");
+
+        // Cette fonction mettra à jour tous les changements qui seront fait 
+        function updateMessage() { ... }
+        updateMessage();
+
+        addForm.addEventListener("submit", event => { ... })
+
+        tasks.addEventListener("click", event => { ... })
+
+        clearAll.addEventListener("click", event => {...})
+
+        function filterTask(term) {
+            // On transforme en tableau sinon on peut pas utiliser map ou filter
+            Array.from(tasks.children)
+            .filter(task => {
+                return !task.textContent.includes(term);
+            })
+            .forEach(task => {
+                // On cache les autres éléments
+                task.classList.add("hide")
+            });   
+        }
+
+        // keyup recupère tous les entré du clavier
+        searchForm.addEventListener("keyup", event => {
+            const term = searchForm.task.value.trim(); 
+            filterTask(term)
+        })
+
+    Exemple 6 :
+        const addForm   = document.querySelector(".add");
+        const tasks     = document.querySelector(".tasks");
+        const clearAll  = document.querySelector(".clear");
+        const messageSpan   = document.querySelector(".message span");
+        const searchForm    = document.querySelector(".search");
+
+        // Cette fonction mettra à jour tous les changements qui seront fait 
+        function updateMessage() { ... }
+        updateMessage();
+
+        addForm.addEventListener("submit", event => { ... })
+
+        tasks.addEventListener("click", event => { ... })
+
+        clearAll.addEventListener("click", event => {...})
+
+        function filterTask(term) {
+            // On transforme en tableau sinon on peut pas utiliser map ou filter
+            Array.from(tasks.children)
+            .filter(task => {
+                return !task.textContent.includes(term);
+            })
+            .forEach(task => {
+                task.classList.add("hide")
+            });
+            
+            // On transforme en tableau sinon on peut pas utiliser map ou filter
+            Array.from(tasks.children)
+            .filter(task => {
+                return task.textContent.includes(term); 
+            })
+            .forEach(task => {
+                task.classList.remove("hide");
+            });
+            
+        }
+
+        // keyup recupère tous les entré du clavier
+        searchForm.addEventListener("keyup", event => {
+            const term = searchForm.task.value.trim(); 
+            filterTask(term)
+        })
+
+        Exemple 6.1 : On ajoute ce code vers la fin
+
+            // reset button
+            searchForm.addEventListener("click", event => {
+                if(event.target.classList.contains("reset")) {
+                    searchForm.reset();    
+                    const term = searchForm.task.value.trim(); 
+                    filterTask(term)
+                }
+            })
+
+Video 7 : Search Task 2 - Case sensitive
+
+    const addForm   = document.querySelector(".add");
+    const tasks     = document.querySelector(".tasks");
+    const clearAll  = document.querySelector(".clear");
+    const messageSpan   = document.querySelector(".message span");
+    const searchForm    = document.querySelector(".search");
+
+    // Cette fonction mettra à jour tous les changements qui seront fait 
+    function updateMessage() {
+        const textLength = tasks.children.length; // On recupère tous les enfants li
+        messageSpan.textContent = `You have ${textLength} pending tasks.`
+    }
+    updateMessage();
+
+    addForm.addEventListener("submit", event => {
+        event.preventDefault();
+        const value = addForm.task.value.trim(); // trim pour enlever les espaces
+
+        if (value === "") {
+            alert("You have to print a task !")
+        }
+
+        if(value.length) {
+            console.log(value);
+            tasks.innerHTML +=  
+            `<li> 
+                <span> ${value} </span> 
+                <i class="bi bi-trash-fill delete"></i>
+            </li>
+            `
+            addForm.reset();
+            updateMessage();
+        }
+    })
+
+    tasks.addEventListener("click", event => {
+        if(event.target.classList.contains("delete")) {
+            event.target.parentElement.remove();
+            updateMessage();
+        }
+    })
+
+    clearAll.addEventListener("click", event => {
+        const taskItems = document.querySelectorAll("li");
+        taskItems.forEach(item => {
+            item.remove();
+        })
+        updateMessage(); 
+    })
+
+
+    function filterTask(term) {
+        // On transforme en tableau sinon on peut pas utiliser map ou filter
+        Array.from(tasks.children)
+        .filter(task => {
+            return !task.textContent.toLowerCase().includes(term);
+        })
+        .forEach(task => {
+            task.classList.add("hide")
+        });
+        
+        // On transforme en tableau sinon on peut pas utiliser map ou filter
+        Array.from(tasks.children)
+        // On affiche tout ce qui correspond
+        .filter(task => {
+            return task.textContent.toLowerCase().includes(term); 
+        })
+        .forEach(task => {
+            task.classList.remove("hide");
+        });
+        
+    }
+
+    // keyup recupère tous les entré du clavier
+    searchForm.addEventListener("keyup", event => {
+        const term = searchForm.task.value.trim().toLowerCase(); 
+        filterTask(term)
+    })
+
+    // reset button
+    searchForm.addEventListener("click", event => {
+        if(event.target.classList.contains("reset")) {
+            searchForm.reset();    
+            const term = searchForm.task.value.trim(); 
+            filterTask(term)
+        }
+    })
