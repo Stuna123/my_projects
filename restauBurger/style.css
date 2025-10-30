@@ -1,0 +1,117 @@
+:root {
+    --color: #ffd301;
+    --color-2: #5cb85c;
+    --orange: #e7480f;
+    --price: 0 1px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./images/bg.png);
+}
+
+.site {
+    font-family: 'Holtwood One SC', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.text-logo {
+    font-family: 'Holtwood One SC', sans-serif;
+    color: var(--orange);
+    text-shadow: 2px 2px var(--color);
+    font-size: 50px;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.text-logo .glyphicon {
+    color: var(--color);
+    text-shadow: 0px 0px var(--color);
+}
+
+.nav {
+    margin-bottom: 40px;
+}
+
+.thumbnail img {
+    background: var(--color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.price {
+    background: var(--color-2);
+    box-shadow: var(--price);
+    -moz-box-shadow: var(--price);
+    -webkit-box-shadow: var(--price);
+    color: #fff;
+    text-shadow: 2px 2px #333;
+    position: absolute;
+    right: 6px;
+    top: 20px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.price:before {
+    border: 4px solid transparent;
+    border-bottom: 4px solid #4a934a;
+    border-left: 4px solid #4a934a;
+    content: "";
+    position: absolute;
+    right: 1px;
+    top: -8px;
+}
+
+.caption > h4 {
+    color: var(--orange);
+    font-size: 18px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: var(--orange);
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    color: var(--orange);
+    background-color: #eee;
+}
+
+.nav>li>a {
+    color: #eee;
+    font-size: 18px;
+    text-shadow: 2px 2px #333;
+}
+
+.btn-order {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--orange);
+    text-shadow: 2px 2px #333;
+}
+
+.btn-order:hover, .btn-order:focus {
+    color: #fff;
+    background-color: #95300b;
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #111;
+    color: #aaa;
+    font-size: 1.5rem;
+}

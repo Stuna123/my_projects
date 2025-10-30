@@ -1,0 +1,970 @@
+Video 1 : Template Structure 1
+    Dans la video 1 et 2, nous allons nous occuper de HTML & CSS
+
+    HTML : 
+        Etape 1 :
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="U-XA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width initial-scale=1.0">
+                    <title> Kanban Application </title>
+
+                    <link rel="stylesheet" href="style.css">
+                </head>
+
+                <body>
+                    <main>
+                        <div class="outer-wrap">
+                            <div class="inner-wrap">
+                                <section class="heading">
+                                    <p class="title"></p>
+                                    <p class="subtitle"></p>
+                                </section>
+
+                                <section class="Kanban">
+                                    <div class="taskbox">
+                                        <div class="title">
+                                            <p></p>
+                                            <span class="todo"></span>
+                                        </div>
+                                        <div class="cards todo">
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off">
+                                                <div>
+                                                    <span class="task-id"></span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <form class="add">
+                                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                            <button class="bi bi-plus" data-id="" name="submit"></button>
+                                        </form>
+                                    </div>
+
+                                    <div class="taskbox"></div>
+                                    <div class="taskbox"></div>
+                                </section>
+                            </div>
+                        </div>
+                    </main>
+
+                    <script src="script.js"></script>
+                </body>
+            </html>
+
+        Etape 2
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="U-XA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width initial-scale=1.0">
+                    <title> Kanban Application </title>
+
+                    <link rel="stylesheet" href="style.css">
+                </head>
+
+                <body>
+                    <main>
+                        <div class="outer-wrap">
+                            <div class="inner-wrap">
+                                <section class="heading">
+                                    <p class="title">Kanban Application</p>
+                                    <p class="subtitle"> Web Based Kanban Style Application To Handle Project Progress</p>
+                                </section>
+
+                                <section class="Kanban">
+                                    <div class="taskbox">
+                                        <div class="title">
+                                            <p>TODO</p>
+                                            <span class="todo"></span>
+                                        </div>
+                                        <div class="cards todo">
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off" disabled="disabled">
+                                                <div>
+                                                    <span class="task-id">#97522</span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <form class="add">
+                                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                            <button class="bi bi-plus" data-id="" name="submit"></button>
+                                        </form>
+                                    </div>
+
+                                    <div class="taskbox">
+                                        <div class="title">
+                                            <p>IN PROGRESS</p>
+                                            <span class="pending">1</span>
+                                        </div>
+                                        <div class="cards pending">
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off" disabled="disabled">
+                                                <div>
+                                                    <span class="task-id">#97522</span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <form class="add">
+                                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                            <button class="bi bi-plus" data-id="" name="submit"></button>
+                                        </form>
+                                    </div>
+
+                                    <div class="taskbox">
+                                        <div class="title">
+                                            <p>COMPLETED</p>
+                                            <span class="completed">2</span>
+                                        </div>
+                                        <div class="cards completed">
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off" disabled="disabled">
+                                                <div>
+                                                    <span class="task-id">#97522</span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <form class="add">
+                                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                            <button class="bi bi-plus" data-id="" name="submit"></button>
+                                        </form>
+                                    </div>
+
+
+                                </section>
+                            </div>
+                        </div>
+                    </main>
+
+                    <script src="script.js"></script>
+                </body>
+            </html>
+
+        Etape 3 : Final
+            1. code complet
+                <!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta http-equiv="U-XA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width initial-scale=1.0">
+                        <title> Kanban Application </title>
+
+                        <link rel="stylesheet" href="style.css">
+                    </head>
+
+                    <body>
+                        <main>
+                            <div class="outer-wrap">
+                                <div class="inner-wrap">
+                                    <section class="heading">
+                                        <p class="title">Kanban Application</p>
+                                        <p class="subtitle"> Web Based Kanban Style Application To Handle Project Progress</p>
+                                    </section>
+
+                                    <section class="Kanban">
+                                        <div class="taskbox">
+                                            <div class="title">
+                                                <p>TODO</p>
+                                                <span class="todo">2</span>
+                                            </div>
+                                            <div class="cards todo">
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" placeholder="Record Burger Site Web" disabled="disabled">
+                                                    <div>
+                                                        <span class="task-id">#97522</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit" data-id=""></button>
+                                                            <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                            <button class="bi bi-trash3 delete" data-id=""></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" placeholder="Record Kanban Project" disabled="disabled">
+                                                    <div>
+                                                        <span class="task-id">#7243</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit" data-id=""></button>
+                                                            <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                            <button class="bi bi-trash3 delete" data-id=""></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <form class="add">
+                                                <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                                <button class="bi bi-plus" data-id="" name="submit"></button>
+                                            </form>
+                                        </div>
+
+                                        <div class="taskbox">
+                                            <div class="title">
+                                                <p>IN PROGRESS</p>
+                                                <span class="pending">1</span>
+                                            </div>
+                                            <div class="cards pending">
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" placeholder="System Design Notes" disabled="disabled">
+                                                    <div>
+                                                        <span class="task-id">#97522</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit" data-id=""></button>
+                                                            <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                            <button class="bi bi-trash3 delete" data-id=""></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <form class="add">
+                                                <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                                <button class="bi bi-plus" data-id="" name="submit"></button>
+                                            </form>
+                                        </div>
+
+                                        <div class="taskbox">
+                                            <div class="title">
+                                                <p>COMPLETED</p>
+                                                <span class="completed">2</span>
+                                            </div>
+                                            <div class="cards completed">
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" placeholder="Budget Manager" disabled="disabled">
+                                                    <div>
+                                                        <span class="task-id">#14377</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit" data-id=""></button>
+                                                            <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                            <button class="bi bi-trash3 delete" data-id=""></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" placeholder="Portfolio" disabled="disabled">
+                                                    <div>
+                                                        <span class="task-id">#23030</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit" data-id=""></button>
+                                                            <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                            <button class="bi bi-trash3 delete" data-id=""></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <form class="add">
+                                                <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                                <button class="bi bi-plus" data-id="" name="submit"></button>
+                                            </form>
+                                        </div>
+
+
+                                    </section>
+                                </div>
+                            </div>
+                        </main>
+
+                        <script src="script.js"></script>
+                    </body>
+                </html>
+
+            2. code complet update
+                <!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta http-equiv="U-XA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Kanban Application</title>
+
+                        <link rel="stylesheet" href="style.css">
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+                    </head>
+
+                    <body>
+                        <main>
+                            <div class="outer-wrap">
+                                <div class="inner-wrap">
+                                    <!-- =============================
+                                        HEADER SECTION
+                                    ============================== -->
+                                    <section class="heading text-center">
+                                        <p class="title bold">Kanban Application</p>
+                                        <p class="subtitle">Web Based Kanban Style Application To Handle Project Progress</p>
+                                    </section>
+
+                                    <!-- =============================
+                                        KANBAN SECTION
+                                    ============================== -->
+                                    <section class="Kanban">
+                                        <!-- TODO COLUMN -->
+                                        <div class="taskbox">
+                                            <div class="title">
+                                                <p>TODO</p>
+                                                <span class="todo">0</span>
+                                            </div>
+                                            <div class="cards todo">
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" disabled>
+                                                    <div>
+                                                        <span class="task-id">#97522</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit"></button>
+                                                            <button class="bi bi-check-lg update hide"></button>
+                                                            <button class="bi bi-trash3 delete"></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <form class="add">
+                                                <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                                <button class="bi bi-plus" name="submit"></button>
+                                            </form>
+                                        </div>
+
+                                        <!-- IN PROGRESS COLUMN -->
+                                        <div class="taskbox">
+                                            <div class="title">
+                                                <p>IN PROGRESS</p>
+                                                <span class="pending">1</span>
+                                            </div>
+                                            <div class="cards pending">
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" disabled>
+                                                    <div>
+                                                        <span class="task-id">#97522</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit"></button>
+                                                            <button class="bi bi-check-lg update hide"></button>
+                                                            <button class="bi bi-trash3 delete"></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <form class="add">
+                                                <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                                <button class="bi bi-plus" name="submit"></button>
+                                            </form>
+                                        </div>
+
+                                        <!-- COMPLETED COLUMN -->
+                                        <div class="taskbox">
+                                            <div class="title">
+                                                <p>COMPLETED</p>
+                                                <span class="completed">2</span>
+                                            </div>
+                                            <div class="cards completed">
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" disabled>
+                                                    <div>
+                                                        <span class="task-id">#97522</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit"></button>
+                                                            <button class="bi bi-check-lg update hide"></button>
+                                                            <button class="bi bi-trash3 delete"></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <form class="add">
+                                                <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                                <button class="bi bi-plus" name="submit"></button>
+                                            </form>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </main>
+
+                        <script src="script.js"></script>
+                    </body>
+                </html>
+
+
+Video 2 : Template Structure 2
+    CSS : 
+        Etape 1 : wrap
+
+            @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+            :root {
+                --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                --white- : #ffffff;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 16px;
+                font-family: 'Poppins', sans-serif;
+                text-decoration: none;
+                list-style: none;
+            }
+
+            .outer-wrap {
+                width: 100%;
+                min-height: 100vh;
+                background-color: #1e3f6c;
+            }
+
+            .inner-wrap {
+                max-width: 1200px;
+                margin: auto
+            }
+
+        Etape 2 : heading
+
+            @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+            :root {
+                --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                --white- : #ffffff;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 16px;
+                font-family: 'Poppins', sans-serif;
+                text-decoration: none;
+                list-style: none;
+            }
+
+            .outer-wrap {
+                width: 100%;
+                min-height: 100vh;
+                background-color: #1e3f6c;
+            }
+
+            .inner-wrap {
+                max-width: 1200px;
+                margin: auto
+            }
+
+            .heading {
+                margin-bottom: 30px;
+            }
+
+            .heading .title {
+                font-size: 30px;
+                color: var(--white-)
+            }
+
+            .heading .subtitle {
+                font-size: 20px;
+                color: var(--white-);
+                font-weight: 300;
+                text-align: center;
+            }
+
+        Etape 3 : kanban
+            Ceci vient à la suite des codes précédents, pas besoin de tout réécrire encore
+            .Kanban {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                min-height: 80vh;
+            }
+
+        Etape 4 : Taskbox 
+            .taskbox {
+                background-color: #d9dfe9;
+                padding: 15px;
+                border-radius: 5px;
+                min-width: 325px;
+                max-width: 500px; /* 500px */
+                box-shadow: var(--box-shadow);
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .taskbox .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0px;
+            }
+
+            .taskbox .title span {
+                background-color: #e45826;
+                color: var(--white-);
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 7px;
+            }
+
+        Etape 5 : cards
+            .cards {
+                padding: 10px 5px;
+            }
+
+            .card {
+                background-color: var(--white-);
+                margin: 10px 0px;
+                padding: 10px;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                box-shadow: var(--box-shadow);
+            }
+
+            .card input {
+                background-color: #ffffff;
+                margin: 10px 0px;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: rgba(19, 19, 19, 0.228) 0px 2px 8px 0px;
+                border: none;
+            }
+
+            .card div {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .card div span {
+                font-size: 12px;
+                padding: 5px 0px;
+                align-self: center;
+            }
+
+            .card div span.task-id {
+                background-color: #002366;
+                padding: 5px;
+                color: var(--white-);
+                border-radius: 5px;
+            }
+
+            .card button {
+                color: var(--white-);
+                font-size: 15px;
+                padding: 9px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-left: 1px;
+                border: 0px;
+                box-shadow: rgba(0,0, 0, .18) 0px 2px 4px;
+            }
+
+            .card .edit {
+                background-color: #4c4c4c;
+            }
+
+            .card .edit:hover {
+                background-color: #646464;
+            }
+
+            .card .update {
+                background-color: #0247a1;
+            }
+            .card .update:hover {
+                background-color: #005ed8;
+            }
+
+            .card .delete {
+                background-color: #b90202;
+            }
+            .card .delete:hover {
+                background-color: #e20000;
+            }
+
+        Etape 6 : add & responsive 
+            .add {
+                display: flex;
+            }
+
+            .add input {
+                flex-grow: 1;
+                padding: 10PX;
+                border-radius: 5px;
+                border: none;
+                box-shadow: var(--box-shadow);
+                margin-right: 5px;
+                font-size: 16px;
+            }
+
+            .add button {
+                background-color: #3b8463;
+                color: var(--white-);
+                font-size: 20px;
+                padding: 10px 5px;
+                border-radius: 5px;
+                border: none;
+                box-shadow: rgba(0, 0, 0, 0.491) 0px 2px 4px;
+            }
+
+            .add button:hover {
+                background-color: #50b286;
+                cursor: pointer;
+            }
+
+        Etape 7 : Final
+            1. code complet
+                @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+                @import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+                :root {
+                    --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    --white- : #ffffff;
+                    --black- : #000;
+                }
+
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-size: 16px;
+                    font-family: 'Poppins', sans-serif;
+                    text-decoration: none;
+                    list-style: none;
+                }
+
+                .hide {
+                    display: none;
+                }
+
+                html, body {
+                    width: 100%;
+                    height: 100%;
+                    background-color: var(--black-);
+                    
+                }
+
+                p {
+                    font-weight: bold;
+                }
+
+                .outer-wrap {
+                    width: 100vw;
+                    min-height: 100vh;
+                    background-color: var(--black-);
+
+                }
+
+                .inner-wrap {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    width: 100%;
+                    flex-grow: 1;
+                }
+
+
+                .heading {
+                    margin-bottom: 30px;
+                    padding: 20px;
+                }
+
+                .heading .title {
+                    font-size: 30px;
+                    color: var(--white-);
+                    font-weight: 550;
+                    text-align: center;
+                }
+
+                .heading .subtitle {
+                    font-size: 20px;
+                    color: var(--white-);
+                    font-weight: 350;
+                    text-align: center;
+                }
+
+
+                .Kanban {
+                    display: flex;
+                    gap: 20px;
+                    justify-content: space-evenly;
+                    align-items: flex-start;
+                    min-height: 80vh;
+                }
+
+                .taskbox {
+                    background-color: #d9dfe9;
+                    padding: 15px;
+                    border-radius: 5px;
+                    min-width: 325px;
+                    max-width: 500px; /* 500px */
+                    box-shadow: var(--box-shadow);
+                    margin: 10px;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .taskbox .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0px;
+                }
+
+                .taskbox .title span {
+                    background-color: #e45826;
+                    color: var(--white-);
+                    padding: 10px;
+                    font-size: 16px;
+                    border-radius: 7px;
+                }
+
+                .cards {
+                    padding: 10px 5px;
+                }
+
+                .card {
+                    background-color: var(--white-);
+                    margin: 10px 0px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: var(--box-shadow);
+                }
+
+                .card input {
+                    background-color: #ffffff;
+                    margin: 10px 0px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    box-shadow: rgba(19, 19, 19, 0.228) 0px 2px 8px 0px;
+                    border: none;
+                }
+
+                .card div {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .card div span {
+                    font-size: 12px;
+                    padding: 5px 0px;
+                    align-self: center;
+                }
+
+                .card div span.task-id {
+                    background-color: #002366;
+                    padding: 5px;
+                    color: var(--white-);
+                    border-radius: 5px;
+                }
+
+                .card button {
+                    color: var(--white-);
+                    font-size: 15px;
+                    padding: 9px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin-left: 1px;
+                    border: 0px;
+                    box-shadow: rgba(0,0, 0, .18) 0px 2px 4px;
+                }
+
+                .card .edit {
+                    background-color: #4c4c4c;
+                }
+
+                .card .edit:hover {
+                    background-color: #646464;
+                }
+
+                .card .update {
+                    background-color: #0247a1;
+                }
+                .card .update:hover {
+                    background-color: #005ed8;
+                }
+
+                .card .delete {
+                    background-color: #b90202;
+                }
+                .card .delete:hover {
+                    background-color: #e20000;
+                }
+
+                .add {
+                    display: flex;
+                }
+
+                .add input {
+                    flex-grow: 1;
+                    padding: 10PX;
+                    border-radius: 5px;
+                    border: none;
+                    box-shadow: var(--box-shadow);
+                    margin-right: 5px;
+                    font-size: 16px;
+                }
+
+                .add button {
+                    background-color: #3b8463;
+                    color: var(--white-);
+                    font-size: 20px;
+                    padding: 10px 5px;
+                    border-radius: 5px;
+                    border: none;
+                    box-shadow: rgba(0, 0, 0, 0.491) 0px 2px 4px;
+                }
+
+                .add button:hover {
+                    background-color: #50b286;
+                    cursor: pointer;
+                }
+
+                @media screen and (max-width: 900px) {
+                    .Kanban {
+                        flex-direction: column;
+                        align-items: center;
+                        min-height: auto;
+                    }
+
+                    .taskbox {
+                        width: 90%;
+                        max-width: 400px;
+                    }
+                }
+
+            2. code complet update 
+                /* ======================================================
+                1. ROOT VARIABLES
+                ====================================================== */
+                    :root {
+                        --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                        --white: #ffffff;
+                        --black: #000000;
+                        --text-light: #eaeaea;
+                        --primary-bg: linear-gradient(135deg, #1e1e2f, #2b2b3c);
+                    }
+
+                /* ======================================================
+                2. RESET & BASE STYLES
+                ====================================================== */
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-size: 16px;
+                        font-family: 'Poppins', sans-serif;
+                    }
+
+                    body {
+                        color: var(--text-light);
+                        background: var(--primary-bg);
+                    }
+
+                /* ======================================================
+                3. LAYOUT STRUCTURE
+                ====================================================== */
+                    .outer-wrap {
+                        width: 100%;
+                        min-height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        background: var(--primary-bg);
+                    }
+
+                    .inner-wrap {
+                        max-width: 1200px;
+                        width: 100%;
+                        margin: auto;
+                        padding: 30px 15px;
+                    }
+
+                /* ======================================================
+                4. COMPONENTS
+                ====================================================== */
+                    .heading {
+                        margin-bottom: 30px;
+                    }
+
+                    .heading .title {
+                        font-size: 30px;
+                        color: var(--white);
+                        font-weight: 600;
+                        text-align: center;
+                    }
+
+                    .heading .subtitle {
+                        font-size: 18px;
+                        color: var(--text-light);
+                        font-weight: 300;
+                        text-align: center;
+                    }
+
+                    .Kanban {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: flex-start;
+                        flex-wrap: wrap;
+                        min-height: 80vh;
+                    }
+
+                    .taskbox {
+                        background-color: #d9dfe9;
+                        padding: 15px;
+                        border-radius: 5px;
+                        min-width: 325px;
+                        max-width: 400px;
+                        box-shadow: var(--shadow);
+                        margin: 10px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .taskbox .title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-weight: bold;
+                        color: #333;
+                        margin-bottom: 10px;
+                    }
+
+                /* ======================================================
+                5. UTILITAIRES (classes rapides à réutiliser)
+                ====================================================== */
+                    .text-center { text-align: center; }
+                    .bold { font-weight: bold; }
+                    .shadow { box-shadow: var(--shadow); }
+
+                /* ======================================================
+                6. RESPONSIVE DESIGN
+                ====================================================== */ 
+                    @media (max-width: 900px) {
+                        .Kanban {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+
+                        .taskbox {
+                            width: 90%;
+                            max-width: none;
+                        }
+                    }
+
+Video 3
