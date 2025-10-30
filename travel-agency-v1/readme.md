@@ -21,9 +21,3 @@ Ce projet a été conçu dans le but de pratiquer les bases du développement we
 ## 📚 Prochaines étapes
 
 - Créer une version améliorée avec *Bootstrap* dans la version 2
-
-## 👨‍💻 Auteur
-
-*Francis Tabora alias Stuna123* 
-[LinkedIn](https://www.linkedin.com/in/francis-tabora-afata) | [GitHub](https://github.com/Stuna123)
-
