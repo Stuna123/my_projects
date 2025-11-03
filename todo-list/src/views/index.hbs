@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>My Todo List</title>
+        <script>
+            let todos = JSON.parse(`{{{ todosString }}}`);
+            console.log(todos);
+        </script>
+    </head>
+
+    <body>
+        <h1>My Todos</h1>
+        <div id="todo-list-container">
+            {{#each todos}}
+            <div id="todos-{{ this.id }}">
+                <h3> {{this.text}} </h3>
+                {{#if this.isCompleted}}
+                <p> Complete! </p>
+                {{/if}}
+                <button>Delete</button>
+                <button>Mark as Completed</button>
+            </div>
+            {{/each}}
+        </div>
+        <div>
+            <input id="new-todo-input" placeholder="Enter your new todo here..." />
+            <button>Add To List</button>
+        </div>
+    </body>
+
+</html>

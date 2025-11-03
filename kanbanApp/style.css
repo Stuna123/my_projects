@@ -1,0 +1,241 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+:root {
+    --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --white- : #ffffff;
+    --fond- : linear-gradient(135deg, #1e1e2f, #2b2b3c);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.hide {
+    display: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b3c);
+    
+}
+
+p {
+    font-weight: bold;
+}
+
+.outer-wrap {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b3c);
+
+}
+
+.inner-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    flex-grow: 1;
+}
+
+
+.heading {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.heading .title {
+    font-size: 30px;
+    color: var(--white-);
+    font-weight: 550;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.heading .subtitle {
+    font-size: 20px;
+    color: var(--white-);
+    font-weight: 350;
+    text-align: center;
+}
+
+
+.Kanban {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    min-height: 80vh;
+}
+
+.taskbox {
+    background-color: #d9dfe9;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 325px;
+    max-width: 500px; /* 500px */
+    box-shadow: var(--box-shadow);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.taskbox:hover {
+    transform: translate(-4px);
+    transition: 0.2s ease-in-out
+}
+
+.taskbox .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.taskbox .title span {
+    background-color: #e45826;
+    color: var(--white-);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.cards {
+    padding: 10px 5px;
+}
+
+.card {
+    background-color: var(--white-);
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+}
+
+.card input {
+    background-color: #ffffff;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(19, 19, 19, 0.228) 0px 2px 8px 0px;
+    border: none;
+}
+
+.card div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card div span {
+    font-size: 12px;
+    padding: 5px 0px;
+    align-self: center;
+}
+
+.card div span.task-id {
+    background-color: #002366;
+    padding: 5px;
+    color: var(--white-);
+    border-radius: 5px;
+}
+
+.card button {
+    color: var(--white-);
+    font-size: 15px;
+    padding: 9px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1px;
+    border: 0px;
+    box-shadow: rgba(0,0, 0, .18) 0px 2px 4px;
+}
+
+.card .edit {
+    background-color: #4c4c4c;
+}
+
+.card .edit:hover {
+    background-color: #646464;
+}
+
+.card .update {
+    background-color: #0247a1;
+}
+.card .update:hover {
+    background-color: #005ed8;
+}
+
+.card .delete {
+    background-color: #b90202;
+}
+.card .delete:hover {
+    background-color: #e20000;
+}
+
+.card.dragging {
+    opacity: 0.4;
+}
+
+.add {
+    display: flex;
+}
+
+.add input {
+    flex-grow: 1;
+    padding: 10PX;
+    border-radius: 5px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.add button {
+    background-color: #3b8463;
+    color: var(--white-);
+    font-size: 20px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.491) 0px 2px 4px;
+}
+
+.add button:hover {
+    background-color: #50b286;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+    .heading {
+        padding: 10px;
+    }
+
+    .heading .title, .heading .subtitle {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Kanban {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+    }
+
+    .taskbox {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+

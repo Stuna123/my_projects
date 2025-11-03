@@ -1,0 +1,8 @@
+Ceci est le premier projet que nous allons construire avec JS.
+Nous allons faire une application de quiz, 
+    et cela pour mettre en pratique tout ce que nous avons appris 
+
+Site exploiter : 
+https://waytolearnx.com/2018/12/qcm-javascript-partie-1.html
+
+https://www.codingame.com/work/fr/questions-entretien-javascript/

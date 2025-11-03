@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FAQ</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style2.css">
+	<script type="text/javascript" src="jquery-1.2.3.min.js"></script> 
+    <script src="script.js"></script>
+</head>
+
+<body>
+        <header>
+                <nav class="nav">
+                    <ul> 
+                        <li><a href="index.php"> PRODUITS </a></li>
+                        <li><a href="apropos.html"> A PROPOS </a></li>
+                        <li><a href=""> FAQ </a></li>
+                        <li><a href="admin/inscription.php"> INSCRIPTION</a></li>
+                        <li><a href="admin/login.php"> CONNEXION</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+           <div class="wrapper">
+                    <div class="container">
+                        <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="big.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="big2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="big3.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="big4.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="big5.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext"></div>
+                            <img src="big6.png" style="width:100%">
+                        </div>
+
+                      <a class="prev" onclick="plusSlides(-1)">❮</a>
+                      <a class="next" onclick="plusSlides(1)">❯</a>
+
+                      <div class="caption-container">
+                        <p></p>
+                      </div>
+
+                      <div class="row" style="padding-top:10px">
+                        <div class="column">
+                          <img class="demo cursor" src="big.png" alt="Erreur" style="width:100%" onclick="currentSlide(1)" >
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="big2.png" alt="Erreur" style="width:100%" onclick="currentSlide(2)" >
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="big3.png" alt="Erreur" style="width:100%" onclick="currentSlide(3)" >
+                        </div> 
+                        <div class="column">
+                            <img class="demo cursor" src="big4.png" alt="Erreur" style="width:100%" onclick="currentSlide(4)" >
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="big5.png" alt="Erreur" style="width:100%" onclick="currentSlide(5)" >
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="big6.png" alt="Erreur" style="width:100%" onclick="currentSlide(6)" >
+                        </div>
+                      </div>
+                </div>
+           </div>
+		   <p>Si vous avez un problème, contactez-nous à cette adresse:</p>
+		   <A HREF="mailto:probleme@burger.net">mailto:probleme@burger.net</A>
+		<h1>FAQ</h1>
+		<h3>Comment puis-je m'inscrire ?</h3>
+		<p>L'inscription est gratuite et ouverte à tout le monde. Cliquez sur le lien "inscription".</p>
+		<h3>Je suis inscrit, mais le site ne me reconnaît pas. Comment faire ?</h3> <p>Cliquez sur "connexion" puis saisissez le login ainsi que le mot de passe saisis lors de votre inscription.
+<script type="text/javascript"> // On lance la boucle sur tous les H3 $('h3').each(function() {     // On masque le paragraphe qui suit     $(this).next('p').hide();     // On copie le style des balises A     var couleurLien = $('a').css("color");     $(this).css({"text-decoration" : "underline", "color" : couleurLien, "cursor":"pointer"});     // A chaque clic, on bascule l'état de l'élément P suivant     $(this).click(function() {         $(this).next('p').toggle();     }); }); </script>
+
+		   
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Quiz Application </title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="../../HTML_CSS/media/DBZ_BT3_logo.png">
+    </head>
+
+    <body>
+        <main>
+            <section class="quiz">
+                <div class="heading">
+                    <p class="title">Quiz Application - JS </p>
+                    <p class="subtitle"> Daily Quiz To Test Your JS knowledge !</p>
+                </div>
+
+                <div class="result hide">
+                    <p>You scored 5/5 ! </p>
+                    <p class="reload">
+                        <button onclick="window.location.reload()"> Try again ? </button>
+                    </p>
+                </div>
+
+                <form class="quiz-form">
+                    <!-- Question 1 -->
+                    <div class="question">
+                        <p>1. Dans quel balise HTML plaçons-nous le code JavaScript ?</p>
+                        <div class="option">
+                            <input type="radio" name="q1" value="A" id="A" checked>
+                            <label for="A"> A. La balise js </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q1" value="B" id="B">
+                            <label for="B"> B. La balise JavaScript </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q1" value="C" id="C">
+                            <label for="C"> C. La balise script </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q1" value="D" id="D">
+                            <label for="D">D. La balise rel </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 2 -->
+                    <div class="question">
+                        <p>2. Comment créer une fonction en JavaScript ? </p>
+                        <div class="option">
+                            <input type="radio" name="q2" value="A" id="A2" checked>
+                            <label for="A2"> A. function:myFunction() </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q2" value="B" id="B2">
+                            <label for="B2"> B. function = myFunction() </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q2" value="C" id="C2">
+                            <label for="C2"> C. function myFunction()</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q2" value="D" id="D2">
+                            <label for="D2">D. Aucune bonne réponse !</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 3 -->
+                    <div class="question">
+                        <p>3. Quelle est la syntaxe correct de la boucle while & for ? </p>
+                        <div class="option">
+                            <input type="radio" name="q3" value="A" id="A3" checked>
+                            <label for="A3"> A. while(i <= 5) | for(let i=0; i<=10; i++) </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q3" value="B" id="B3">
+                            <label for="B3"> B. while i = 1 to 5 | for(let i<=10; i++) </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q3" value="C" id="C3">
+                            <label for="C3"> C. while (i <= 5; i++) | for i = 1 to 10 </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q3" value="D" id="D3">
+                            <label for="D3">D. while(let i = 0; i<= 5; i++) | for(let i = 0; i<=10)</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 4 -->
+                    <div class="question">
+                        <p>4. Le DOM ____ ?</p>
+                        <div class="option">
+                            <input type="radio" name="q4" value="A" id="A4" checked>
+                            <label for="A4"> A. est dédié pour JavaScript </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q4" value="B" id="B4">
+                            <label for="B4"> B. décrit la structure du document HTML ou XML </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q4" value="C" id="C4">
+                            <label for="C4"> C. est un moteur de Template </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q4" value="D" id="D4">
+                            <label for="D4">D. ne peut pas être manipulé par JavaScript</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 5 -->
+                    <div class="question">
+                        <p>5. Lequel des éléments suivants n’est pas une propriété de l’objet window ?</p>
+                        <div class="option">
+                            <input type="radio" name="q5" value="A" id="A5" checked>
+                            <label for="A5"> A. menu </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q5" value="B" id="B5">
+                            <label for="B5"> B. document </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q5" value="C" id="C5">
+                            <label for="C5"> C.navigator </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q5" value="D" id="D5">
+                            <label for="D5">D. object </label>
+                        </div>
+                    </div>
+                    
+                    <div class="submit">
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+
+            </section>
+        </main>    
+    
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,529 @@
+HTML : 
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Burger Code</title>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+            <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+            <link rel="stylesheet" href="./style.css">
+        </head>
+        <body>
+            <div class="container site">
+            
+                <h1 class="text-logo"><span class="bi-shop"></span> Burger Code <span class="bi-shop"></span></h1>
+                
+                <nav>
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" data-bs-toggle="pill" data-bs-target="#tab1" role="tab">Menus</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="pill" data-bs-target="#tab2" role="tab">Burgers</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="pill" data-bs-target="#tab3" role="tab">Snacks</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="pill" data-bs-target="#tab4" role="tab">Salades</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="pill" data-bs-target="#tab5" role="tab">Boissons</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="pill" data-bs-target="#tab6" role="tab">Desserts</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="tab-content">
+
+                    <div class="tab-pane active" id="tab1" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/m1.png" class="img-fluid" alt="...">
+                                    <div class="price">8.90 €</div>
+                                    <div class="caption">
+                                        <h4>Menu Classic</h4>
+                                        <p>Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/m2.png" class="img-fluid" alt="...">
+                                    <div class="price">9.50 €</div>
+                                    <div class="caption">
+                                        <h4>Menu Bacon</h4>
+                                        <p>Sandwich: Burger, Fromage, Bacon, Salade, Tomate + Frites + Boisson</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/m3.png" class="img-fluid" alt="...">
+                                    <div class="price">10.90 €</div>
+                                    <div class="caption">
+                                        <h4>Menu Big</h4>
+                                        <p>Sandwich: Double Burger, Fromage, Cornichon, Salade + Frites + Boisson</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/m4.png" class="img-fluid" alt="...">
+                                    <div class="price">9.90 €</div>
+                                    <div class="caption">
+                                        <h4>Menu Chicken</h4>
+                                        <p>Sandwich: Poulet Frit, Tomate, Salade, Mayonnaise + Frites + Boisson</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/m5.png" class="img-fluid" alt="...">
+                                    <div class="price">10.90 €</div>
+                                    <div class="caption">
+                                        <h4>Menu Fish</h4>
+                                        <p>Sandwich: Poisson, Salade, Mayonnaise, Cornichon + Frites + Boisson</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/m6.png" class="img-fluid" alt="...">
+                                    <div class="price">11.90 €</div>
+                                    <div class="caption">
+                                        <h4>Menu Double Steak</h4>
+                                        <p>Sandwich: Double Burger, Fromage, Bacon, Salade, Tomate + Frites + Boisson</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab2" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/b1.png" class="img-fluid" alt="...">
+                                    <div class="price">5.90 €</div>
+                                    <div class="caption">
+                                        <h4>Classic</h4>
+                                        <p>Sandwich: Burger, Salade, Tomate, Cornichon</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/b2.png" class="img-fluid" alt="...">
+                                    <div class="price">6.50 €</div>
+                                    <div class="caption">
+                                        <h4>Bacon</h4>
+                                        <p>Sandwich: Burger, Fromage, Bacon, Salade, Tomate</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/b3.png" class="img-fluid" alt="...">
+                                    <div class="price">6.90 €</div>
+                                    <div class="caption">
+                                        <h4>Big</h4>
+                                        <p>Sandwich: Double Burger, Fromage, Cornichon, Salade</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/b4.png" class="img-fluid" alt="...">
+                                    <div class="price">5.90 €</div>
+                                    <div class="caption">
+                                        <h4>Chicken</h4>
+                                        <p>Sandwich: Poulet Frit, Tomate, Salade, Mayonnaise</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/b5.png" class="img-fluid" alt="...">
+                                    <div class="price">6.50 €</div>
+                                    <div class="caption">
+                                        <h4>Fish</h4>
+                                        <p>Sandwich: Poisson, Salade, Mayonnaise, Cornichon</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/b6.png" class="img-fluid" alt="...">
+                                    <div class="price">7.50 €</div>
+                                    <div class="caption">
+                                        <h4>Double Steak</h4>
+                                        <p>Sandwich: Double Burger, Fromage, Bacon, Salade, Tomate</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab3" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/s1.png" class="img-fluid" alt="...">
+                                    <div class="price">3.90 €</div>
+                                    <div class="caption">
+                                        <h4>Frites</h4>
+                                        <p>Pommes de terre frites</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/s2.png" class="img-fluid" alt="...">
+                                    <div class="price">3.40 €</div>
+                                    <div class="caption">
+                                        <h4>Onion Rings</h4>
+                                        <p>Rondelles d'oignon frits</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/s3.png" class="img-fluid" alt="...">
+                                    <div class="price">5.90 €</div>
+                                    <div class="caption">
+                                        <h4>Nuggets</h4>
+                                        <p>Nuggets de poulet frits</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/s4.png" class="img-fluid" alt="...">
+                                    <div class="price">3.50 €</div>
+                                    <div class="caption">
+                                        <h4>Nuggets Fromage</h4>
+                                        <p>Nuggets de fromage frits</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/s5.png" class="img-fluid" alt="...">
+                                    <div class="price">5.90 €</div>
+                                    <div class="caption">
+                                        <h4>Ailes de Poulet</h4>
+                                        <p>Ailes de poulet Barbecue</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab4" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/sa1.png" class="img-fluid" alt="...">
+                                    <div class="price">8.90 €</div>
+                                    <div class="caption">
+                                        <h4>César Poulet Pané</h4>
+                                        <p>Poulet Pané, Salade, Tomate et la fameuse sauce César</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/sa2.png" class="img-fluid" alt="...">
+                                    <div class="price">8.90 €</div>
+                                    <div class="caption">
+                                        <h4>César Poulet Grillé</h4>
+                                        <p>Poulet Grillé, Salade, Tomate et la fameuse sauce César</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/sa3.png" class="img-fluid" alt="...">
+                                    <div class="price">5.90 €</div>
+                                    <div class="caption">
+                                        <h4>Salade Light</h4>
+                                        <p>Salade, Tomate, Concombre, Maïs et Vinaigre balsamique</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/sa4.png" class="img-fluid" alt="...">
+                                    <div class="price">7.90 €</div>
+                                    <div class="caption">
+                                        <h4>Poulet Pané</h4>
+                                        <p>Poulet Pané, Salade, Tomate et la sauce de votre choix</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/sa5.png" class="img-fluid" alt="...">
+                                    <div class="price">7.90 €</div>
+                                    <div class="caption">
+                                        <h4>Poulet Grillé</h4>
+                                        <p>Poulet Grillé, Salade, Tomate et la sauce de votre choix</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab5" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/bo1.png" class="img-fluid" alt="...">
+                                    <div class="price">1.90 €</div>
+                                    <div class="caption">
+                                        <h4>Coca-Cola</h4>
+                                        <p>Au choix: Petit, Moyen ou Grand</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/bo2.png" class="img-fluid" alt="...">
+                                    <div class="price">1.90 €</div>
+                                    <div class="caption">
+                                        <h4>Coca-Cola Light</h4>
+                                        <p>Au choix: Petit, Moyen ou Grand</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/bo3.png" class="img-fluid" alt="...">
+                                    <div class="price">1.90 €</div>
+                                    <div class="caption">
+                                        <h4>Coca-Cola Zéro</h4>
+                                        <p>Au choix: Petit, Moyen ou Grand</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/bo4.png" class="img-fluid" alt="...">
+                                    <div class="price">1.90 €</div>
+                                    <div class="caption">
+                                        <h4>Fanta</h4>
+                                        <p>Au choix: Petit, Moyen ou Grand</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/bo5.png" class="img-fluid" alt="...">
+                                    <div class="price">1.90 €</div>
+                                    <div class="caption">
+                                        <h4>Sprite</h4>
+                                        <p>Au choix: Petit, Moyen ou Grand</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/bo6.png" class="img-fluid" alt="...">
+                                    <div class="price">1.90 €</div>
+                                    <div class="caption">
+                                        <h4>Nestea</h4>
+                                        <p>Au choix: Petit, Moyen ou Grand</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab6" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/d1.png" class="img-fluid" alt="...">
+                                    <div class="price">4.90 €</div>
+                                    <div class="caption">
+                                        <h4>Fondant au chocolat</h4>
+                                        <p>Au choix: Chocolat Blanc ou au lait</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/d2.png" class="img-fluid" alt="...">
+                                    <div class="price">2.90 €</div>
+                                    <div class="caption">
+                                        <h4>Muffin</h4>
+                                        <p>Au choix: Au fruits ou au chocolat</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/d3.png" class="img-fluid" alt="...">
+                                    <div class="price">2.90 €</div>
+                                    <div class="caption">
+                                        <h4>Beignet</h4>
+                                        <p>Au choix: Au chocolat ou à la vanille</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/d4.png" class="img-fluid" alt="...">
+                                    <div class="price">3.90 €</div>
+                                    <div class="caption">
+                                        <h4>Milkshake</h4>
+                                        <p>Au choix: Fraise, Vanille ou Chocolat</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-thumbnail">
+                                    <img src="images/d5.png" class="img-fluid" alt="...">
+                                    <div class="price">4.90 €</div>
+                                    <div class="caption">
+                                        <h4>Sundae</h4>
+                                        <p>Au choix: Fraise, Caramel ou Chocolat</p>
+                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Commander</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </body>
+    </html>
+
+CSS : 
+
+    body {
+        background: url(./images/bg.png);
+    }
+    .site {
+        font-family: 'Holtwood One SC', sans-serif;
+    }
+    .text-logo {
+        font-family: 'Holtwood One SC', sans-serif;
+        color: #e7480f;
+        text-shadow: 2px 2px #ffd301;
+        font-size: 50px;
+        padding: 40px 0px;
+        text-align: center;
+    }
+    .text-logo span {
+        color: #ffd301;
+        text-shadow: 0px 0px #ffd301;
+    }
+    .nav {
+    margin-bottom: 40px;
+    }
+    .nav-link {
+        color: #eee;
+        font-size: 18px;
+        text-shadow: 2px 2px #333;
+        cursor: pointer;
+    }
+    .nav-link.active {
+        background-color: #e7480f !important;
+    }
+    .nav-link:hover {
+        color: #e7480f;
+        background-color: #eee;
+    }
+    .img-thumbnail {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .img-thumbnail img {
+        background: #ffd301;
+        width: 100%;
+    }
+    .img-thumbnail .price {
+        background: #5cb85c;
+        box-shadow: 0 1px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 1px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0 1px rgba(0,0,0,0.2);
+        color: #fff;
+        text-shadow: 2px 2px #333;
+        position: absolute;
+        right: -10px;
+        top: 16px;
+        padding: 5px 10px;
+        font-size: 20px;
+        border-radius: 3px;
+    }
+    .img-thumbnail .price:before {
+        border: 4px solid transparent;
+        border-bottom: 4px solid #4a934a;
+        border-left: 4px solid #4a934a;
+        content: "";
+        position: absolute;
+        right: 1px;
+        top: -8px;
+    }
+    .img-thumbnail .caption {
+        padding: 9px;
+    }
+    .img-thumbnail .caption h4 {
+        color: #e7480f;
+        font-size: 18px;
+    }
+    .img-thumbnail .btn-order {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #e7480f;
+        text-shadow: 2px 2px #333;
+    }
+    .img-thumbnail .btn-order:hover, 
+    .img-thumbnail .btn-order:focus {
+        color: #fff;
+        background-color: #c13c0d;
+    }

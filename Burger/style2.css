@@ -1,0 +1,285 @@
+*
+{
+    padding : 0;
+    margin : 0;
+}
+body{
+
+    background: url('bg.png');
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:20px;
+}
+
+.nav ul
+{
+    list-style: none;
+    text-align:center;
+    padding:0;
+    margin:0;
+}
+
+.nav li
+{
+    text-decoration: none; /* Permet d'enlever le soulignement */
+    display: inline-block;
+}
+
+.wrapper
+{
+    width: 850px;
+    /*Aucune marge et qu'il soit centré à gauche et à droite*/
+    margin: 0 auto; 
+    /*A gauche et a droite*/
+    padding: 0 auto;
+    
+}
+
+.nav ul
+{
+    text-decoration: none;
+    color:black;
+    text-shadow: 3px 15px 15px black;
+}
+
+ul {
+    text-decoration:none;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+/*    float: left;*/
+          text-decoration: none;
+    padding: 5px;
+    margin: 0px;
+    position: relative;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 50px; 
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color:grey;
+  }
+
+
+/*
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+ }
+*/
+
+
+/* slideshow*/
+  
+{
+    box-sizing: border-box;
+}
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+      margin-bottom: -10px;
+      display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    text-decoration: none;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+
+  .prev:hover,
+  .next:hover {
+    text-decoration: none;
+    /*    color: ;*/
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  /*footer*/
+
+  .context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+
+.orange
+{
+    color: orange;
+}
+
+/* Contact */
+.contact
+{
+    /*en haut et en bas 60 et 0 à gauche et à droite*/
+    padding: 60px 0;
+    /*On centre le texte*/
+    text-align: center;
+}
+
+/*Footer*/
+footer
+{
+    height: 350px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    
+}
+
+footer h2
+{
+    color: #fff;
+    text-align: center;
+    /*par rapport en haut*/
+    padding-top: 90px;
+}
+.copyright
+{
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* A propos */
+#apropos
+{
+    position: fixed;
+    left: calc(50% - 400px);
+    top: calc(50% - 200px);
+}

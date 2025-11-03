@@ -1,0 +1,148 @@
+body
+{
+    /*On met en arrière plan*/
+    background: url(../images/bg.png);
+}
+
+/*Site est dans la 1er div du container de notre site*/
+.site
+{
+    /*
+        On met la police dans les écrits du site avec le font-family
+        font family a été télécharger depuis online et on peut l'utiliser
+        Son adresse doit être ajouter dans la page html 
+    */
+    font-family: 'Holtwood One SC', sans-serif;
+}
+
+/*Titre du logo*/
+.text-logo
+{
+    font-family: 'Holtwood One SC', sans-serif;
+    color: orange;
+    text-shadow: 2px 2px yellow;
+    font-size: 50px;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+/*couvert qui se trouve dans la class text-logo*/
+.text-logo .glyphicon
+{
+    color: yellow;
+    text-shadow: 0px 0px yellow;
+} 
+
+/*menu de navigation était coller avec nos eleement du menu*/
+.nav
+{
+    margin-bottom: 40px;
+}
+
+/*vignette pour les images*/
+.thumbnail img
+{
+    /*On change l'arrière plan*/
+    background: yellow; 
+}
+
+/*On change la texture des prix*/
+.price
+{
+    background: #4a934a;
+    box-shadow: 0 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px rgba(0,0,0,0.2); /*Pour le navigateur mozilla*/
+    -webkit-box-shadow: 0 1px rgba(0,0,0,0.2); /*Pour le navigateur internetExplor*/
+    color: white;
+    text-shadow: 2px 2px #333;
+    position: absolute;
+    right: 6px;
+    top: 20px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.price:before
+{
+    border: 4px solid transparent;
+    border-bottom: 4px solid #4a934a;
+    border-left: 4px solid #4a934a;
+    content:"";
+    position: absolute;
+    right: 1px;
+    top: -8px;
+}
+
+/* > veut dire directement */
+.caption > h4
+{
+    color: #e7480f;
+    font-size: 18px;
+}
+
+/*couleur qui est dans le carrée du des onglets de titres*/
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover
+{
+    background: #e7480f;
+}
+.nav>li>a:focus, .nav>li>a:hover
+{
+    color: #e7480f;
+    background-color: #eee;
+}
+.nav>li>a
+{
+    color: #eee;
+    font-size: 18px;
+    text-shadow: 2px 2px #333;
+}
+
+
+/*button*/
+.btn-order
+{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e7480f;
+    text-decoration: none;
+    text-shadow: 2px 1px #333;
+}
+
+.btn-order:hover, .btn-order:focus
+{
+    color:#fff;
+    background-color: #c13c0d;
+}
+
+/*Partie Admin*/
+.admin
+{
+    /*font blanc*/
+    background: #fff;
+    /*Le contenu sera ecartÃ© de 50px Ã  l'interieur*/
+    padding: 50px;
+    /* width: 1px; */
+    /*Le bord est arrondi*/
+    border-radius: 10px;
+    
+}
+
+.adminMembre
+{   
+    /*font blanc*/
+    background: #fff;
+    /*Le contenu sera ecartÃ© de 50px Ã  l'interieur*/
+    padding: 5px;
+    /*Le bord est arrondi*/
+    border-radius: 5px;
+/*    width: 5000px;*/
+}
+
+/*On écrit les erreurs en corrige*/
+.help-inline
+{
+    color: red;
+}

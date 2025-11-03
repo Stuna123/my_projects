@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo List Manager</title>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <main>
+            <div class="wrap">
+                <section class="heading">
+                    <p class="title"> Todo List Manager </p>
+                    <p class="subtitle"> Manager And Search Your Pending Tasks in Clicks </p>
+                </section>
+                
+                <section class="task-manager">
+                    <div class="search-box">
+                        <form class="search">
+                            <input type="text" name="task" autocomplete="off" placeholder="Search task">
+                            <i class="bi bi-x-circle reset"></i>
+                        </form>
+                    </div>
+                    <div class="task-box">
+                        <ul class="tasks">
+                            <li>
+                                <span>Learn HTML/CSS</span>
+                                <i class="bi bi-trash-fill delete"></i>
+                            </li>
+
+                            <li>
+                                <span>Learn JS</span>
+                                <i class="bi bi-trash-fill delete"></i>
+                            </li>
+
+                            <li>
+                                <span>Learn React, Angular, Node, etc. </span>
+                                <i class="bi bi-trash-fill delete"></i>
+                            </li>
+                        </ul>
+                        <form class="add" name="task" placeholder="add task" autocomplete="off">
+                            <input type="text" name="task" placeholder="Add task" autocomplete="off">
+                            <input type="submit" value="Add">
+                        </form>
+                    </div>
+                    <div class="message">
+                        <span>You have 3 pending tasks.</span>
+                        <button class="clear">Clear All</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>

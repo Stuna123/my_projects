@@ -1,0 +1,148 @@
+Ce fichier permet de faire le code au fur et à mesure du projet côté JS!
+
+Video 1 : Working with Answer
+
+    Exemple 1 : Test quand on click sur le bouton submit
+    const form = document.querySelector(".quiz-form");
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+        console.log("--- test to see what happen ---");
+    })
+    ---------------------------------------
+    Exemple 2 : Recuperation des réponses de l'utilisateurs
+    const form = document.querySelector(".quiz-form");
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+
+        // We'll capture the answers
+        const userAnswers = [form.q1.value, form.q2.value, 
+            form.q3.value, form.q4.value, form.q5.value];
+        console.log(userAnswers)
+    })
+    ---------------------------------------
+    Exemple 3 : Vérification de la bonne réponse
+    const correctAnswer = ["A", "A", "A", "A", "A"]
+    const form = document.querySelector(".quiz-form");
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+
+        // We'll capture the answers
+        const userAnswers = [form.q1.value, form.q2.value, form.q3.value, form.q4.value, form.q5.value];
+        
+        userAnswers.forEach((answer, index) => {
+            if(answer === correctAnswer[index]) {
+                console.log("Correct Answer", index);
+            } else {
+                console.log("Wrong !")
+            }
+        })
+    });
+
+    Test with score
+    const correctAnswer = ["A", "A", "A", "A", "A"]
+    const form = document.querySelector(".quiz-form");
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+
+        let score = 0;
+        // We'll capture the answers
+        const userAnswers = [form.q1.value, form.q2.value, form.q3.value, form.q4.value, form.q5.value];
+        
+        userAnswers.forEach((answer, index) => {
+            if(answer === correctAnswer[index]) {
+                score += 1;
+            } else {
+                console.log("Wrong !")
+            }
+        })
+        console.log(score);
+    });
+    ---------------------------------------
+
+Video 2 : Score Update
+    Exemple 1 : Afficher le score qui était caché
+    const correctAnswer = ["A", "A", "A", "A", "A"]
+    const form = document.querySelector(".quiz-form");
+    const result = document.querySelector(".result");
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+
+        let score = 0;
+        // We'll capture the answers
+        const userAnswers = [form.q1.value, form.q2.value, form.q3.value, form.q4.value, form.q5.value];
+        
+        userAnswers.forEach((answer, index) => {
+            if(answer === correctAnswer[index]) {
+                score += 1;
+            } else {
+                console.log("Wrong !")
+            }
+        })
+        console.log(score);
+
+        scrollTo(0, 0); // Move to the top of the page
+        result.classList.remove("hide");
+    });
+    ---------------------------------------
+    Exemple 2 : Acceder aux texte du score écrit dans le html 
+    const correctAnswer = ["A", "A", "A", "A", "A"]
+    const form = document.querySelector(".quiz-form");
+    const result = document.querySelector(".result");
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+
+        let score = 0;
+        // We'll capture the answers
+        const userAnswers = [form.q1.value, form.q2.value, form.q3.value, form.q4.value, form.q5.value];
+        
+        userAnswers.forEach((answer, index) => {
+            if(answer === correctAnswer[index]) {
+                score += 1;
+            } else {
+                console.log("Wrong !")
+            }
+        })
+        console.log(score);
+
+        scrollTo(0, 0);
+        result.classList.remove("hide");
+        /// console.log(result.querySelector("p").textContent);
+        
+        result.querySelector("p").textContent =`You scored ${score}/5`;
+    });
+
+Video 3 : Reload
+Exemple 1 : Avoir accès aux questions
+const correctAnswer = ["A", "A", "A", "A", "A"]
+const form = document.querySelector(".quiz-form");
+const result = document.querySelector(".result");
+const questions = document.querySelectorAll(".question");
+
+console.log(questions[0])
+
+form.addEventListener("submit", event => {
+    event.preventDefault();
+
+    let score = 0;
+    // We'll capture the answers
+    const userAnswers = [form.q1.value, form.q2.value, form.q3.value, form.q4.value, form.q5.value];
+    
+    userAnswers.forEach((answer, index) => {
+        if(answer === correctAnswer[index]) {
+            score += 1;
+        } else {
+            console.log("Wrong !")
+        }
+    })
+    console.log(score);
+
+    scrollTo(0, 0);
+    result.classList.remove("hide");
+    result.querySelector("p").textContent =`You scored ${score}/5`;
+});

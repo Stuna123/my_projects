@@ -1,0 +1,156 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+:root {
+    /*--box-shadow: rgba(25, 234, 32, 0.24) 0px 3px 8px;*/
+    --box-shadow: rgb(26, 24, 24);
+    --text-Color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+/***************************************** Wrap *****************************************/
+.wrap {
+    background-color: var(--box-shadow);
+    color: var(--text-Color);
+    min-height: 100vh;
+    padding: 20px;
+}
+/***************************************** Heading *****************************************/
+.heading {
+    margin: 10px auto 40px auto; 
+}
+
+.heading .title {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.heading .subtitle {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+}
+
+/***************************************** Task-manager *****************************************/
+.task-manager {
+    min-width: 350px;
+    max-width: 450px;
+    margin: auto;
+}
+
+.search-box, .task-box, .message {
+    background-color: #484040;
+    padding: 20px 25px;
+    border-radius: 3px;
+    margin: 20px 0px;
+}
+
+/***************************************** Search *****************************************/
+.search-box .search{
+    display: flex;
+    margin: 10px 0px;
+}
+
+.search-box input {
+    border-radius: 3px;
+    width: 100%;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-box i.reset {
+    font-size: 24px;
+    height: 100%;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+/***************************************** Task-box *****************************************/
+.task-box .tasks {
+    margin: 20px 0px;
+}
+
+.task-box li {
+    background-color: #1d1c1f;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-box span {
+    padding: 10px;
+}
+
+.task-box i.delete {
+    background-color:#840622;
+    border-radius: 0px 2px 2px 0px;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.task-box i.delete:hover {
+    background-color:#D82148;
+}
+
+.task-box .add {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.task-box input[type="text"] {
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.task-box input[type="submit"] {
+    background-color: rgb(128, 113, 142);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 16px;
+}
+.task-box input[type="submit"]:hover {
+    background-color: rgb(217, 191, 242);
+    cursor: pointer;
+}
+/***************************************** Message *****************************************/
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message .clear {
+    background-color: rgb(48, 48, 234);
+    border-radius: 3px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.message .clear:hover {
+    background-color: #2f62a9;
+}

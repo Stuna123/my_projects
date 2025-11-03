@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>My Todo List</title>
+        <script>
+            let todos = JSON.parse(`{{{ todosString }}}`);
+            
+            function setTodos(todos) {
+                const container = document.getElementById('todo-list-container')
+                container.innerHTML = ''
+
+                for (let todo of todos) {
+                    const newTodoContainer = document.createElement('div')
+
+                    const newTodoHeading = document.createElement('h3')
+                    newTodoHeading.innerText = todo.text
+                    newTodoContainer.appendChild(newTodoHeading)
+
+                    if (todo.isCompleted) {
+                        const newTodoCompletedMessage = document.createElement('p')
+                        newTodoCompletedMessage.innerText = 'Complete!'
+                        newTodoContainer.appendChild(newTodoCompletedMessage)
+                    }
+
+                    const newTodoDeleteButton       = document.createElement('button')
+                    newTodoDeleteButton.innerText   = 'Delete'
+                    newTodoDeleteButton.onclick     = () => { onDeleteTodo(todo.id) }
+                    newTodoContainer.appendChild(newTodoDeleteButton)
+
+                    const newTodoCompleteButton     = document.createElement('button')
+                    newTodoCompleteButton.innerText = 'Mark as Completed'
+                   newTodoCompleteButton.onclick   =  () => { onCompleteTodo(todo.id) }
+                    newTodoContainer.appendChild(newTodoCompleteButton)
+
+                    container.appendChild(newTodoContainer)
+                }
+            }
+
+            function onCreateTodo() {
+                const input = document.getElementById('new-todo-input')
+                const newTodoText = input.value
+            
+
+                fetch('/todos', {
+                    method:'post',
+                    headers: { 'Content-Type': 'application/json' },// to say what type of our data represent
+                    body: JSON.stringify({ newTodoText }),
+                }) 
+                .then(res => res.json())
+                .then(newTodo => {
+                    //console.log(newTodo)
+                    todos.push(newTodo)
+                    setTodos(todos)
+                    // clear what we wrote
+                    input.value = ''
+                })
+            }
+
+            function onCompleteTodo(id) {
+                fetch(`/todos/${id}`, {method: 'put'})
+                    .then(res => res.json())
+                    .then(updatedTodo => {
+                        todos = todos.map(t => t.id === updatedTodo.id ? updatedTodo : t)
+                        setTodos(todos)
+                    })
+            }
+
+            function onDeleteTodo(id) {
+                fetch(`/todos/${id}`, {method: 'delete'})
+                    .then(res => {
+                        if(res.status === 204) {
+                            todos = todos.filter(todo => todo.id !== id)
+                            setTodos(todos)
+                        } else {
+                            return res.json()
+                        }
+                    })
+                    .catch(e => console.error(`Error deleting todo ${e}`))
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <h1>My Todos</h1>
+        <div id="todo-list-container">
+            {{#each todos}}
+            <div id="todos-{{ this.id }}">
+                <h3> {{this.text}} </h3>
+                {{#if this.isCompleted}}
+                <p> Complete! </p>
+                {{/if}}
+                <button onclick="onDeleteTodo('{{ this.id }}')">Delete</button>
+                <button onclick="onCompleteTodo('{{ this.id }}')">Mark As Completed</button>
+            </div>
+            {{/each}}
+        </div>
+        <div>
+            <input id="new-todo-input" placeholder="Enter your new todo here..." />
+            <button onclick="onCreateTodo()">Add To List</button>
+        </div>
+    </body>
+
+</html>

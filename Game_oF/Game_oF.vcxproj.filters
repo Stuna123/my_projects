@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\src\ofxOscBundle.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\src\ofxOscMessage.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\src\ofxOscParameterSync.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\src\ofxOscReceiver.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\src\ofxOscSender.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\ip\posix\NetworkingUtils.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip\posix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\ip\posix\UdpSocket.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip\posix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\ip\win32\NetworkingUtils.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\ip\win32\UdpSocket.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Life.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="LevelController.cpp" />
+    <ClCompile Include="LiveTesting.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{5e6b8880-a4e4-4f77-bf86-e39db257265d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc">
+      <UniqueIdentifier>{ff685518-155f-4b67-92e1-f6800cd386ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\src">
+      <UniqueIdentifier>{362f49a0-55bf-420c-bade-ed119ead57a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs">
+      <UniqueIdentifier>{abbb50a8-7ef1-4ae5-b8da-4f5c19514bcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack">
+      <UniqueIdentifier>{2dfe5c1a-5863-416b-8646-801d45fc2cf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src">
+      <UniqueIdentifier>{25ea799b-1040-416a-ae9f-9729cc79a6ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src\ip">
+      <UniqueIdentifier>{8c074ded-ad53-4a1d-b455-1e7456db8e9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src\ip\posix">
+      <UniqueIdentifier>{ff8dcd20-5a7f-41a8-a8c9-c7130c8bcf4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src\ip\win32">
+      <UniqueIdentifier>{06c0618e-c7e8-4361-ba8f-0dda9d2bba01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src\osc">
+      <UniqueIdentifier>{f1607743-d43d-4fd7-9ca4-889c0f9ac6e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\src\ofxOsc.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\src\ofxOscArg.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\src\ofxOscBundle.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\src\ofxOscMessage.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\src\ofxOscParameterSync.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\src\ofxOscReceiver.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\src\ofxOscSender.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\ip\NetworkingUtils.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\ip\PacketListener.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\ip\TimerListener.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\ip\UdpSocket.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\osc\MessageMappingOscPacketListener.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\osc\OscException.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\osc\OscHostEndianness.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\osc\OscPacketListener.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\ESIEA\4A\PST4\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Life.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="LevelController.h" />
+    <ClInclude Include="LiveTesting.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>

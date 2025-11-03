@@ -1,0 +1,541 @@
+/* pour éviter les calculs foireux de largeur */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4 {
+    color: #444;
+}
+
+h1 {
+    font-family: 'Crete Round', serif;
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 30px; 
+}
+
+
+h4 {
+    font-size: 24px;
+}
+
+
+p {
+    line-height: 1.6;
+    color: #777;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+.wrapper {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.orange {
+    color:#ff7a00;
+}
+
+.clear {
+    clear: both;
+}
+
+small {
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* HEADER */
+header {
+    height: 120px;
+}
+
+header h1 {
+    float: left;
+    margin-top: 32px;
+}
+
+header nav {
+    float: right;
+    margin-top: 55px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* MAIN Image */
+#main-image {
+    height: 580px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background: url('images/main.jpg') center center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#main-image h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 150px 0px 40px 0px;
+    margin-bottom: 20px;
+}
+
+.button-1 {
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: #ff7a00;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.button-1:hover {
+    color: #fff;
+    background: #02b8dd;
+}
+
+/* STEPS */
+#steps ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* pour que les blocs passent à la ligne si pas assez d’espace */
+    gap: 20px;
+    padding: 0;
+    margin: 80px 0;
+}
+
+#steps ul li {
+    flex: 1 1 30%; /* chaque bloc prend 30% de la largeur minimum */
+    padding-top: 140px;
+    text-align: center;
+    min-width: 280px; /* évite que ça devienne trop petit*/ 
+}
+
+#steps h4 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#steps p {
+    margin-bottom: 20px;
+}
+
+#step-1 {
+    background: url('images/steps-icon-1.png') no-repeat top center;
+}
+
+#step-2 {
+    background: url('images/steps-icon-2.png') no-repeat top center;
+}
+
+#step-3 {
+    background: url('images/steps-icon-3.png') no-repeat top center;
+}
+
+/* POSSIBILITIES */
+
+#possibilities {
+    background-color: #efefef;
+    width: 100vw;  /* 100% de la largeur du viewport */
+    margin-left: calc(-50vw + 50%); /* Cette astuce permet d'étendre le bloc sur toute la largeur */
+    padding: 60px 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+/* WRAPPER GLOBAL */
+.possibilities-container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+#possibilities article {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 500px;
+    min-width: 300px;
+    flex: 1 1 45%; /* largeur flexible */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#possibilities article img {
+    width: 50%;
+    object-fit: cover;
+    height: auto;
+}
+
+#possibilities .overlay {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#possibilities .overlay h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#possibilities .overlay p {
+    font-style: italic;
+    font-size: .95rem;
+    margin-bottom: 15px;
+}
+
+#possibilities .button-2 {
+    color: #fff;
+    background-color: #ff7a00;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#possibilities .button-2:hover {
+    background-color: darkorange;
+}
+
+/* CONTACT */
+
+#contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.form-contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+#contact h3 {
+    width: 400px;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+    border-bottom: 1px solid #02b8dd;
+    padding-bottom: 20px;
+}
+
+form {
+    margin: 60px 0 20px 0;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #777;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+}
+
+.button-3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #02b8dd;
+    padding: 11px;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.button-3:hover {
+    color: #fff;
+    background-color: #444;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: #eee;
+    padding: 40px 0 20px;
+    font-family: 'Segoe UI', sans-serif;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    box-sizing: border-box;
+  }
+  
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 30px;
+  }
+  
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+.footer-column p,
+  .footer-column ul {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+  
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+  
+.footer-column ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+  
+.footer-column ul li a:hover {
+    color: orange;
+}
+  
+.socials a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+  
+.socials a:hover {
+    color: orange;
+}
+  
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+  
+
+
+
+/* === HEADER RESPONSIVE === */
+@media screen and (max-width: 768px) {
+    /* HEADER */
+    header {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    header .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        float: none;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+    header nav {
+        float: none;
+        margin: 0;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header nav ul li {
+        float: none;
+        display: block;
+        margin: 0;
+    }
+
+    /* MAIN-IMAGE */
+
+    #main-image {
+        height: 400px;
+        padding: 40px 10px;
+    }
+
+    #main-image h2 {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+
+    .button-1 {
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    /* STEPS */
+    #steps ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #steps ul li {
+        width: 90%;
+        padding-top: 100px;
+    }
+
+    /* POSSIBILITIES */
+    .possibilities-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #possibilities article {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #possibilities article img, .overlay {
+        width: 100%;
+    }
+
+    .overlay {
+        text-align: center;
+        align-items: center;
+    }
+
+    /* CONTACT */
+    .form-contact {
+        flex-direction: colum;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    .form-contact h3, 
+    .form-contact p {
+        width: 100%;
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+    };
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"], 
+    input[type="email"] {
+        width: 100px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .button-3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .footer-column {
+        margin-bottom: 30px;
+      }
+}
+
+/*
+    Ecodim      - âge à partir de Mateo, voir avec Ali
+    Discipolat   - antioche
+*/
+

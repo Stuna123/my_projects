@@ -1,0 +1,2685 @@
+Video 1 : Template Structure 1
+    Dans la video 1 et 2, nous allons nous occuper de HTML & CSS
+
+    HTML : 
+        Etape 1 :
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="U-XA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width initial-scale=1.0">
+                    <title> Kanban Application </title>
+
+                    <link rel="stylesheet" href="style.css">
+                </head>
+
+                <body>
+                    <main>
+                        <div class="outer-wrap">
+                            <div class="inner-wrap">
+                                <section class="heading">
+                                    <p class="title"></p>
+                                    <p class="subtitle"></p>
+                                </section>
+
+                                <section class="Kanban">
+                                    <div class="taskbox">
+                                        <div class="title">
+                                            <p></p>
+                                            <span class="todo"></span>
+                                        </div>
+                                        <div class="cards todo">
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off">
+                                                <div>
+                                                    <span class="task-id"></span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <form class="add">
+                                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                            <button class="bi bi-plus" data-id="" name="submit"></button>
+                                        </form>
+                                    </div>
+
+                                    <div class="taskbox"></div>
+                                    <div class="taskbox"></div>
+                                </section>
+                            </div>
+                        </div>
+                    </main>
+
+                    <script src="script.js"></script>
+                </body>
+            </html>
+
+        Etape 2
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="U-XA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width initial-scale=1.0">
+                    <title> Kanban Application </title>
+
+                    <link rel="stylesheet" href="style.css">
+                </head>
+
+                <body>
+                    <main>
+                        <div class="outer-wrap">
+                            <div class="inner-wrap">
+                                <section class="heading">
+                                    <p class="title">Kanban Application</p>
+                                    <p class="subtitle"> Web Based Kanban Style Application To Handle Project Progress</p>
+                                </section>
+
+                                <section class="Kanban">
+                                    <div class="taskbox">
+                                        <div class="title">
+                                            <p>TODO</p>
+                                            <span class="todo"></span>
+                                        </div>
+                                        <div class="cards todo">
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off" disabled="disabled">
+                                                <div>
+                                                    <span class="task-id">#97522</span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <form class="add">
+                                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                            <button class="bi bi-plus" data-id="" name="submit"></button>
+                                        </form>
+                                    </div>
+
+                                    <div class="taskbox">
+                                        <div class="title">
+                                            <p>IN PROGRESS</p>
+                                            <span class="pending">1</span>
+                                        </div>
+                                        <div class="cards pending">
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off" disabled="disabled">
+                                                <div>
+                                                    <span class="task-id">#97522</span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <form class="add">
+                                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                            <button class="bi bi-plus" data-id="" name="submit"></button>
+                                        </form>
+                                    </div>
+
+                                    <div class="taskbox">
+                                        <div class="title">
+                                            <p>COMPLETED</p>
+                                            <span class="completed">2</span>
+                                        </div>
+                                        <div class="cards completed">
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off" disabled="disabled">
+                                                <div>
+                                                    <span class="task-id">#97522</span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <form class="add">
+                                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                            <button class="bi bi-plus" data-id="" name="submit"></button>
+                                        </form>
+                                    </div>
+
+
+                                </section>
+                            </div>
+                        </div>
+                    </main>
+
+                    <script src="script.js"></script>
+                </body>
+            </html>
+
+        Etape 3 : Final
+            1. code complet
+                <!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta http-equiv="U-XA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width initial-scale=1.0">
+                        <title> Kanban Application </title>
+
+                        <link rel="stylesheet" href="style.css">
+                    </head>
+
+                    <body>
+                        <main>
+                            <div class="outer-wrap">
+                                <div class="inner-wrap">
+                                    <section class="heading">
+                                        <p class="title">Kanban Application</p>
+                                        <p class="subtitle"> Web Based Kanban Style Application To Handle Project Progress</p>
+                                    </section>
+
+                                    <section class="Kanban">
+                                        <div class="taskbox">
+                                            <div class="title">
+                                                <p>TODO</p>
+                                                <span class="todo">2</span>
+                                            </div>
+                                            <div class="cards todo">
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" placeholder="Record Burger Site Web" disabled="disabled">
+                                                    <div>
+                                                        <span class="task-id">#97522</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit" data-id=""></button>
+                                                            <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                            <button class="bi bi-trash3 delete" data-id=""></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" placeholder="Record Kanban Project" disabled="disabled">
+                                                    <div>
+                                                        <span class="task-id">#7243</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit" data-id=""></button>
+                                                            <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                            <button class="bi bi-trash3 delete" data-id=""></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <form class="add">
+                                                <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                                <button class="bi bi-plus" data-id="" name="submit"></button>
+                                            </form>
+                                        </div>
+
+                                        <div class="taskbox">
+                                            <div class="title">
+                                                <p>IN PROGRESS</p>
+                                                <span class="pending">1</span>
+                                            </div>
+                                            <div class="cards pending">
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" placeholder="System Design Notes" disabled="disabled">
+                                                    <div>
+                                                        <span class="task-id">#97522</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit" data-id=""></button>
+                                                            <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                            <button class="bi bi-trash3 delete" data-id=""></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <form class="add">
+                                                <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                                <button class="bi bi-plus" data-id="" name="submit"></button>
+                                            </form>
+                                        </div>
+
+                                        <div class="taskbox">
+                                            <div class="title">
+                                                <p>COMPLETED</p>
+                                                <span class="completed">2</span>
+                                            </div>
+                                            <div class="cards completed">
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" placeholder="Budget Manager" disabled="disabled">
+                                                    <div>
+                                                        <span class="task-id">#14377</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit" data-id=""></button>
+                                                            <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                            <button class="bi bi-trash3 delete" data-id=""></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" placeholder="Portfolio" disabled="disabled">
+                                                    <div>
+                                                        <span class="task-id">#23030</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit" data-id=""></button>
+                                                            <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                            <button class="bi bi-trash3 delete" data-id=""></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <form class="add">
+                                                <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                                <button class="bi bi-plus" data-id="" name="submit"></button>
+                                            </form>
+                                        </div>
+
+
+                                    </section>
+                                </div>
+                            </div>
+                        </main>
+
+                        <script src="script.js"></script>
+                    </body>
+                </html>
+
+            2. code complet update
+                <!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta http-equiv="U-XA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Kanban Application</title>
+
+                        <link rel="stylesheet" href="style.css">
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+                    </head>
+
+                    <body>
+                        <main>
+                            <div class="outer-wrap">
+                                <div class="inner-wrap">
+                                    <!-- =============================
+                                        HEADER SECTION
+                                    ============================== -->
+                                    <section class="heading text-center">
+                                        <p class="title bold">Kanban Application</p>
+                                        <p class="subtitle">Web Based Kanban Style Application To Handle Project Progress</p>
+                                    </section>
+
+                                    <!-- =============================
+                                        KANBAN SECTION
+                                    ============================== -->
+                                    <section class="Kanban">
+                                        <!-- TODO COLUMN -->
+                                        <div class="taskbox">
+                                            <div class="title">
+                                                <p>TODO</p>
+                                                <span class="todo">0</span>
+                                            </div>
+                                            <div class="cards todo">
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" disabled>
+                                                    <div>
+                                                        <span class="task-id">#97522</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit"></button>
+                                                            <button class="bi bi-check-lg update hide"></button>
+                                                            <button class="bi bi-trash3 delete"></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <form class="add">
+                                                <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                                <button class="bi bi-plus" name="submit"></button>
+                                            </form>
+                                        </div>
+
+                                        <!-- IN PROGRESS COLUMN -->
+                                        <div class="taskbox">
+                                            <div class="title">
+                                                <p>IN PROGRESS</p>
+                                                <span class="pending">1</span>
+                                            </div>
+                                            <div class="cards pending">
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" disabled>
+                                                    <div>
+                                                        <span class="task-id">#97522</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit"></button>
+                                                            <button class="bi bi-check-lg update hide"></button>
+                                                            <button class="bi bi-trash3 delete"></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <form class="add">
+                                                <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                                <button class="bi bi-plus" name="submit"></button>
+                                            </form>
+                                        </div>
+
+                                        <!-- COMPLETED COLUMN -->
+                                        <div class="taskbox">
+                                            <div class="title">
+                                                <p>COMPLETED</p>
+                                                <span class="completed">2</span>
+                                            </div>
+                                            <div class="cards completed">
+                                                <form class="card">
+                                                    <input type="text" name="task" autocomplete="off" disabled>
+                                                    <div>
+                                                        <span class="task-id">#97522</span>
+                                                        <span>
+                                                            <button class="bi bi-pencil edit"></button>
+                                                            <button class="bi bi-check-lg update hide"></button>
+                                                            <button class="bi bi-trash3 delete"></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <form class="add">
+                                                <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                                                <button class="bi bi-plus" name="submit"></button>
+                                            </form>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </main>
+
+                        <script src="script.js"></script>
+                    </body>
+                </html>
+
+Video 2 : Template Structure 2
+    CSS : 
+        Etape 1 : wrap
+
+            @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+            :root {
+                --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                --white- : #ffffff;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 16px;
+                font-family: 'Poppins', sans-serif;
+                text-decoration: none;
+                list-style: none;
+            }
+
+            .outer-wrap {
+                width: 100%;
+                min-height: 100vh;
+                background-color: #1e3f6c;
+            }
+
+            .inner-wrap {
+                max-width: 1200px;
+                margin: auto
+            }
+
+        Etape 2 : heading
+
+            @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+            :root {
+                --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                --white- : #ffffff;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 16px;
+                font-family: 'Poppins', sans-serif;
+                text-decoration: none;
+                list-style: none;
+            }
+
+            .outer-wrap {
+                width: 100%;
+                min-height: 100vh;
+                background-color: #1e3f6c;
+            }
+
+            .inner-wrap {
+                max-width: 1200px;
+                margin: auto
+            }
+
+            .heading {
+                margin-bottom: 30px;
+            }
+
+            .heading .title {
+                font-size: 30px;
+                color: var(--white-)
+            }
+
+            .heading .subtitle {
+                font-size: 20px;
+                color: var(--white-);
+                font-weight: 300;
+                text-align: center;
+            }
+
+        Etape 3 : kanban
+            Ceci vient à la suite des codes précédents, pas besoin de tout réécrire encore
+            .Kanban {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                min-height: 80vh;
+            }
+
+        Etape 4 : Taskbox 
+            .taskbox {
+                background-color: #d9dfe9;
+                padding: 15px;
+                border-radius: 5px;
+                min-width: 325px;
+                max-width: 500px; /* 500px */
+                box-shadow: var(--box-shadow);
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .taskbox .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0px;
+            }
+
+            .taskbox .title span {
+                background-color: #e45826;
+                color: var(--white-);
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 7px;
+            }
+
+        Etape 5 : cards
+            .cards {
+                padding: 10px 5px;
+            }
+
+            .card {
+                background-color: var(--white-);
+                margin: 10px 0px;
+                padding: 10px;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                box-shadow: var(--box-shadow);
+            }
+
+            .card input {
+                background-color: #ffffff;
+                margin: 10px 0px;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: rgba(19, 19, 19, 0.228) 0px 2px 8px 0px;
+                border: none;
+            }
+
+            .card div {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .card div span {
+                font-size: 12px;
+                padding: 5px 0px;
+                align-self: center;
+            }
+
+            .card div span.task-id {
+                background-color: #002366;
+                padding: 5px;
+                color: var(--white-);
+                border-radius: 5px;
+            }
+
+            .card button {
+                color: var(--white-);
+                font-size: 15px;
+                padding: 9px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-left: 1px;
+                border: 0px;
+                box-shadow: rgba(0,0, 0, .18) 0px 2px 4px;
+            }
+
+            .card .edit {
+                background-color: #4c4c4c;
+            }
+
+            .card .edit:hover {
+                background-color: #646464;
+            }
+
+            .card .update {
+                background-color: #0247a1;
+            }
+            .card .update:hover {
+                background-color: #005ed8;
+            }
+
+            .card .delete {
+                background-color: #b90202;
+            }
+            .card .delete:hover {
+                background-color: #e20000;
+            }
+
+        Etape 6 : add & responsive 
+            .add {
+                display: flex;
+            }
+
+            .add input {
+                flex-grow: 1;
+                padding: 10PX;
+                border-radius: 5px;
+                border: none;
+                box-shadow: var(--box-shadow);
+                margin-right: 5px;
+                font-size: 16px;
+            }
+
+            .add button {
+                background-color: #3b8463;
+                color: var(--white-);
+                font-size: 20px;
+                padding: 10px 5px;
+                border-radius: 5px;
+                border: none;
+                box-shadow: rgba(0, 0, 0, 0.491) 0px 2px 4px;
+            }
+
+            .add button:hover {
+                background-color: #50b286;
+                cursor: pointer;
+            }
+
+        Etape 7 : Final
+            1. code complet
+                @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+                @import url("https://fonts.googleapis.com/css2?family=Poppins:ital");
+
+                :root {
+                    --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    --white- : #ffffff;
+                    --black- : #000;
+                }
+
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-size: 16px;
+                    font-family: 'Poppins', sans-serif;
+                    text-decoration: none;
+                    list-style: none;
+                }
+
+                .hide {
+                    display: none;
+                }
+
+                html, body {
+                    width: 100%;
+                    height: 100%;
+                    background-color: var(--black-);
+                    
+                }
+
+                p {
+                    font-weight: bold;
+                }
+
+                .outer-wrap {
+                    width: 100vw;
+                    min-height: 100vh;
+                    background-color: var(--black-);
+
+                }
+
+                .inner-wrap {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    width: 100%;
+                    flex-grow: 1;
+                }
+
+
+                .heading {
+                    margin-bottom: 30px;
+                    padding: 20px;
+                }
+
+                .heading .title {
+                    font-size: 30px;
+                    color: var(--white-);
+                    font-weight: 550;
+                    text-align: center;
+                }
+
+                .heading .subtitle {
+                    font-size: 20px;
+                    color: var(--white-);
+                    font-weight: 350;
+                    text-align: center;
+                }
+
+
+                .Kanban {
+                    display: flex;
+                    gap: 20px;
+                    justify-content: space-evenly;
+                    align-items: flex-start;
+                    min-height: 80vh;
+                }
+
+                .taskbox {
+                    background-color: #d9dfe9;
+                    padding: 15px;
+                    border-radius: 5px;
+                    min-width: 325px;
+                    max-width: 500px; /* 500px */
+                    box-shadow: var(--box-shadow);
+                    margin: 10px;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .taskbox .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0px;
+                }
+
+                .taskbox .title span {
+                    background-color: #e45826;
+                    color: var(--white-);
+                    padding: 10px;
+                    font-size: 16px;
+                    border-radius: 7px;
+                }
+
+                .cards {
+                    padding: 10px 5px;
+                }
+
+                .card {
+                    background-color: var(--white-);
+                    margin: 10px 0px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: var(--box-shadow);
+                }
+
+                .card input {
+                    background-color: #ffffff;
+                    margin: 10px 0px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    box-shadow: rgba(19, 19, 19, 0.228) 0px 2px 8px 0px;
+                    border: none;
+                }
+
+                .card div {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .card div span {
+                    font-size: 12px;
+                    padding: 5px 0px;
+                    align-self: center;
+                }
+
+                .card div span.task-id {
+                    background-color: #002366;
+                    padding: 5px;
+                    color: var(--white-);
+                    border-radius: 5px;
+                }
+
+                .card button {
+                    color: var(--white-);
+                    font-size: 15px;
+                    padding: 9px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin-left: 1px;
+                    border: 0px;
+                    box-shadow: rgba(0,0, 0, .18) 0px 2px 4px;
+                }
+
+                .card .edit {
+                    background-color: #4c4c4c;
+                }
+
+                .card .edit:hover {
+                    background-color: #646464;
+                }
+
+                .card .update {
+                    background-color: #0247a1;
+                }
+                .card .update:hover {
+                    background-color: #005ed8;
+                }
+
+                .card .delete {
+                    background-color: #b90202;
+                }
+                .card .delete:hover {
+                    background-color: #e20000;
+                }
+
+                .add {
+                    display: flex;
+                }
+
+                .add input {
+                    flex-grow: 1;
+                    padding: 10PX;
+                    border-radius: 5px;
+                    border: none;
+                    box-shadow: var(--box-shadow);
+                    margin-right: 5px;
+                    font-size: 16px;
+                }
+
+                .add button {
+                    background-color: #3b8463;
+                    color: var(--white-);
+                    font-size: 20px;
+                    padding: 10px 5px;
+                    border-radius: 5px;
+                    border: none;
+                    box-shadow: rgba(0, 0, 0, 0.491) 0px 2px 4px;
+                }
+
+                .add button:hover {
+                    background-color: #50b286;
+                    cursor: pointer;
+                }
+
+                @media screen and (max-width: 900px) {
+                    .Kanban {
+                        flex-direction: column;
+                        align-items: center;
+                        min-height: auto;
+                    }
+
+                    .taskbox {
+                        width: 90%;
+                        max-width: 400px;
+                    }
+                }
+
+            2. code complet update 
+                /* ======================================================
+                1. ROOT VARIABLES
+                ====================================================== */
+                    :root {
+                        --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                        --white: #ffffff;
+                        --black: #000000;
+                        --text-light: #eaeaea;
+                        --primary-bg: linear-gradient(135deg, #1e1e2f, #2b2b3c);
+                    }
+
+                /* ======================================================
+                2. RESET & BASE STYLES
+                ====================================================== */
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-size: 16px;
+                        font-family: 'Poppins', sans-serif;
+                    }
+
+                    body {
+                        color: var(--text-light);
+                        background: var(--primary-bg);
+                    }
+
+                /* ======================================================
+                3. LAYOUT STRUCTURE
+                ====================================================== */
+                    .outer-wrap {
+                        width: 100%;
+                        min-height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        background: var(--primary-bg);
+                    }
+
+                    .inner-wrap {
+                        max-width: 1200px;
+                        width: 100%;
+                        margin: auto;
+                        padding: 30px 15px;
+                    }
+
+                /* ======================================================
+                4. COMPONENTS
+                ====================================================== */
+                    .heading {
+                        margin-bottom: 30px;
+                    }
+
+                    .heading .title {
+                        font-size: 30px;
+                        color: var(--white);
+                        font-weight: 600;
+                        text-align: center;
+                    }
+
+                    .heading .subtitle {
+                        font-size: 18px;
+                        color: var(--text-light);
+                        font-weight: 300;
+                        text-align: center;
+                    }
+
+                    .Kanban {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: flex-start;
+                        flex-wrap: wrap;
+                        min-height: 80vh;
+                    }
+
+                    .taskbox {
+                        background-color: #d9dfe9;
+                        padding: 15px;
+                        border-radius: 5px;
+                        min-width: 325px;
+                        max-width: 400px;
+                        box-shadow: var(--shadow);
+                        margin: 10px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .taskbox .title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-weight: bold;
+                        color: #333;
+                        margin-bottom: 10px;
+                    }
+
+                /* ======================================================
+                5. UTILITAIRES (classes rapides à réutiliser)
+                ====================================================== */
+                    .text-center { text-align: center; }
+                    .bold { font-weight: bold; }
+                    .shadow { box-shadow: var(--shadow); }
+
+                /* ======================================================
+                6. RESPONSIVE DESIGN
+                ====================================================== */ 
+                    @media (max-width: 900px) {
+                        .Kanban {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+
+                        .taskbox {
+                            width: 90%;
+                            max-width: none;
+                        }
+                    }
+
+Video 3 Class & Function
+    Etape 1
+        kanban.js ;
+        export default class kanban {
+            static getTasks(columnId) {
+
+            }
+
+            static insertTask(columnId, content) {
+
+            }
+
+            static updateTask(taskId, updatedInormation) {
+
+            }
+
+            static deleteTask(taskId) {
+                
+            }
+
+            static getAllTasks() {
+
+            }
+        }
+
+        function read() {
+
+        }
+
+        function save() {
+            
+        }
+
+        script.js :
+
+    Etape 2 
+        kanban.js :
+            export default class Kanban {
+                static getTasks(columnId) {
+
+                }
+
+                static insertTask(columnId, content) {
+
+                }
+
+                static updateTask(taskId, updatedInormation) {
+
+                }
+
+                static deleteTask(taskId) {
+
+                }
+
+                static getAllTasks() {
+                    const data = read();
+                    return data;
+                }
+            }
+
+            function read() {
+                const data = localStorage.getItem("data");
+                return JSON.parse(data);
+            }
+
+            function save() {
+
+            }
+
+        script.js : 
+            import Kanban from "./kanban.js"
+            console.log(Kanban.getAllTasks())
+
+    Etape 3 
+        Kanban.js :
+            export default class Kanban {
+                ...
+                    static getAllTasks() {
+                    const data = read();
+                    return [data[0].tasks, data[1].tasks, data[2].tasks];
+                }
+            }
+
+            function read() {
+                const data = localStorage.getItem("data");
+
+                if(!data) {
+                    return [
+                        {columnId: 0, tasks:[]},
+                        {columnId: 1, tasks:[]},
+                        {columnId: 2, tasks:[]}
+                    ]
+                }
+
+                return JSON.parse(data);
+            }
+
+            function save(){...}
+
+        script.js : nothing change 
+
+Video 4 : Get Task
+    Etape 1 
+        kanban.js 
+            export default class Kanban {
+                static getTasks(columnId) {
+                    const data = read()[columnId];
+                    return data.tasks;
+                }
+
+                static insertTask(columnId, content) {...}
+                static updateTask(taskId, updatedInormation) {...}
+                static deleteTask(taskId) {...}
+
+                static getAllTasks() {
+                    const data = read();
+                    return [data[0].tasks, data[1].tasks, data[2].tasks];
+                }
+            }
+
+            function read() {
+                const data = localStorage.getItem("data");
+
+                if(!data) {
+                    return [
+                        {columnId: 0, tasks:[]},
+                        {columnId: 1, tasks:[]},
+                        {columnId: 2, tasks:[]}
+                    ]
+                }
+
+                return JSON.parse(data);
+            }
+
+            function save() {...}
+
+        script.js :
+            import Kanban from "./kanban.js" 
+            console.log(Kanban.getTasks(0))
+
+    Etape 2 
+
+        2.1
+            kanban.js 
+                export default class Kanban {
+                    static getTasks(columnId) {
+                        const data = read().find(column => {
+                            return column.columnId == columnId
+                        })
+                        
+                        return data.tasks;
+                    }
+                    ... : Les autres static, rien ne change
+                }
+
+                function read() & save() : rien ne change, no need to write !
+
+            script.js
+                import Kanban from './kanban.js';
+                console.log(Kanban.getTasks(0));
+
+        2.2 
+        kanban.js 
+            export default class Kanban {
+                static getTasks(columnId) {
+                    const data = read().find(column => {
+                        return column.columnId == columnId
+                    })
+
+                    // si on ne trouve pas data
+                    if (!data) {
+                        return [];
+                    }
+                    return data.tasks;
+                }
+                ...         
+            }
+            ...
+
+        script.js 
+            import Kanban from './kanban.js';
+            console.log(Kanban.getTasks(0));
+
+Video 5 : Insert Task
+    Etape 1 : On ajoute une tâche
+        kanban.js :
+            export default class Kanban {
+                static getTasks(columnId) {
+                    const data = read().find(column => {
+                        return column.columnId == columnId
+                    })
+                    
+                    return data.tasks;
+                }
+
+                static insertTask(columnId, content) {
+                    const data = read();
+
+                    // I can have access to the column in which I can add data
+                    const column = data.find(column => {
+                        return column.columnId == columnId
+                    });
+
+                    const task = {
+                        taskId: Math.floor(Math.random() * 100000),
+                        content: content
+                    }
+
+                    column.tasks.push(task);
+                    
+                    // Add console.log and return to see if you want to test
+                    console.log(data)
+                    localStorage.setItem("data", JSON.stringify(data))
+
+                    return task;
+                }
+
+                static updateTask(taskId, updatedInormation) {
+
+                }
+
+                static deleteTask(taskId) {
+
+                }
+
+                static getAllTasks() {
+                    const data = read();
+                    return [data[0].tasks, data[1].tasks, data[2].tasks];
+                }
+            }
+
+            function read() {
+                const data = localStorage.getItem("data");
+
+                if(!data) {
+                    return [
+                        {columnId: 0, tasks:[]},
+                        {columnId: 1, tasks:[]},
+                        {columnId: 2, tasks:[]}
+                    ]
+                }
+
+                return JSON.parse(data);
+            }
+
+            function save() {
+
+            }
+
+        script.js : 
+            import Kanban from './kanban.js';
+            console.log(Kanban.getTasks(0));
+
+    Etape 2 : Si on essaie d'ajouter une colonne qui n'existe pas, donc, erreur !   
+        kanban.js :
+            On applique la modification seulement dans static insertTask 
+                static insertTask(columnId, content) {
+                    const data = read();
+
+                    // I can have access to the column in which I can add data
+                    const column = data.find(column => {
+                        return column.columnId == columnId
+                    });
+
+                    const task = {
+                        taskId: Math.floor(Math.random() * 100000),
+                        content: content
+                    }
+
+                    // On a une erreure, si la colonne n'existe pas !
+                    if(!column) {
+                        throw new Error("Column doesn't exist");
+                    }
+
+                    column.tasks.push(task);
+                    
+                    // Add console.log and return to see if you want to test
+                    console.log(data)
+                    localStorage.setItem("data", JSON.stringify(data))
+
+                    return task;
+                }
+
+Video 6 : Delete Task 
+
+    Etape 1 : On supprimer notre element
+        Ici on s'interesse qu'à delete, les autres code n'ont pas changé
+        export default class Kanban {
+            static getTasks(columnId) {
+                const data = read().find(column => {
+                    return column.columnId == columnId
+                })
+                
+                return data.tasks;
+            }
+
+            static insertTask(columnId, content) { ... }
+
+            static updateTask(taskId, updatedInormation) {...}
+
+            static deleteTask(taskId) {
+                const data = read();
+
+                for(const column of data) {
+                    const task = column.tasks.find(item => {
+                        return item.taskId == taskId
+                    });
+
+                    column.tasks.splice(column.tasks.indexOf(task), 1);
+                }
+
+                localStorage.setItem("data", JSON.stringify(data))
+            }
+
+            static getAllTasks() {
+                const data = read();
+                return [data[0].tasks, data[1].tasks, data[2].tasks];
+            }
+        }
+
+        function read() {
+            const data = localStorage.getItem("data");
+
+            if(!data) {
+                return [
+                    {columnId: 0, tasks:[]},
+                    {columnId: 1, tasks:[]},
+                    {columnId: 2, tasks:[]}
+                ]
+            }
+
+            return JSON.parse(data);
+        }
+
+        function save() {...}
+
+    Etape 2 : On test dans notre script 
+        script.js :
+            import Kanban from "./kanban.js";
+        
+            //  Les id sont changé aléatoirement, il faut prendre le new dans localStorage
+                    Pendant la vidéo, ceci sont ce que j'ai pris mais quand il faudra tester,
+                        prenez des nouveaux id dans le localStorage :D !
+            console.log(Kanban.getTasks(1));
+            Kanban.deleteTask(13915);
+            Kanban.deleteTask(37951);
+            Kanban.deleteTask(68826);
+            Kanban.deleteTask(13658);
+            Kanban.deleteTask(94010);
+            Kanban.deleteTask(10393);
+            Kanban.deleteTask(28469);
+            Kanban.deleteTask(34792);
+            Kanban.deleteTask(40972);
+            Kanban.deleteTask(22231);
+            Kanban.deleteTask(6512);
+            Kanban.deleteTask(24411);
+            Kanban.deleteTask(2380);
+            Kanban.deleteTask(15524);
+            Kanban.deleteTask(81911);
+            Kanban.deleteTask(80541);
+            console.log(Kanban.getTasks(1));
+
+    Etape 3 : On optimise le code 
+        on rajoute notre localStorage dans la fonction save() 
+        function save() {
+            localStorage.setItem("data", JSON.stringify(data))
+        }
+
+Video 7 : Update Task 
+    
+    Dans cette video, la première étape on recupère la colonne de la tâche  
+        Pour le recuperer, il faut se referer à l'id.
+        
+
+    Etape 1 
+        kanban.js
+         // On s'occupe de updateTask(...)
+                export default class Kanban {
+                    static getTasks(columnId) {
+                        const data = read().find(column => {
+                            return column.columnId == columnId
+                        })
+                        
+                        return data.tasks;
+                    }
+
+                    static insertTask(columnId, content) {
+                        const data = read();
+
+                        // I can have access to the column in which I can add data
+                        const column = data.find(column => {
+                            return column.columnId == columnId
+                        });
+
+                        const task = {
+                            taskId: Math.floor(Math.random() * 100000),
+                            content: content
+                        }
+
+                        column.tasks.push(task);
+                        save(data);
+
+                    }
+
+                    static updateTask(taskId, updatedInormation) {
+                        const data = read();
+
+                        for(const column of data) {
+                            const task = column.tasks.find(item => {
+                                return item.taskId == taskId;
+                            });
+
+                            if(task) {
+                                console.log(column, task);
+                            }
+                        }
+                    }
+
+                    static deleteTask(taskId) {
+                        const data = read();
+
+                        for(const column of data) {
+                            const task = column.tasks.find(item => {
+                                return item.taskId == taskId
+                            });
+
+                            column.tasks.splice(column.tasks.indexOf(task), 1);
+                        }
+
+                        save(data)
+                    }
+
+                    static getAllTasks() {
+                        const data = read();
+                        return [data[0].tasks, data[1].tasks, data[2].tasks];
+                    }
+                }
+
+                function read() {
+                    const data = localStorage.getItem("data");
+
+                    if(!data) {
+                        return [
+                            {columnId: 0, tasks:[]},
+                            {columnId: 1, tasks:[]},
+                            {columnId: 2, tasks:[]}
+                        ]
+                    }
+
+                    return JSON.parse(data);
+                }
+
+                function save() {
+                    localStorage.setItem("data", JSON.stringify(data))
+                }
+
+        script.js 
+        Kanban.updateTask(97522, {
+            columnId: 0,
+            content: "Record Kanabn preview"
+        });
+
+    Etape 2 : On test dans le console.log() pour voir le resultat 
+        kanban.js : 
+            export default class Kanban {
+                static getTasks(columnId) {
+                    const data = read().find(column => {
+                        return column.columnId == columnId
+                    })
+                    
+                    return data.tasks;
+                }
+
+                static insertTask(columnId, content) {
+                    const data = read();
+
+                    // I can have access to the column in which I can add data
+                    const column = data.find(column => {
+                        return column.columnId == columnId
+                    });
+
+                    const task = {
+                        taskId: Math.floor(Math.random() * 100000),
+                        content: content
+                    }
+
+                    column.tasks.push(task);
+                    save(data);
+
+                }
+
+                static updateTask(taskId, updatedInormation) {
+                    const data = read();
+
+                    function findColumnTask() {
+                        for(const column of data) {
+                            const task = column.tasks.find(item => {
+                                return item.taskId == taskId;
+                            });
+
+                            if(task) {
+                                return [task, column];
+                            }
+                        }
+                    }
+
+                    const[task, currentColumn] = findColumnTask();
+                    console.log(task);
+                }
+
+                static deleteTask(taskId) {
+                    const data = read();
+
+                    for(const column of data) {
+                        const task = column.tasks.find(item => {
+                            return item.taskId == taskId
+                        });
+
+                        column.tasks.splice(column.tasks.indexOf(task), 1);
+                    }
+
+                    save(data)
+                }
+
+                static getAllTasks() {
+                    const data = read();
+                    return [data[0].tasks, data[1].tasks, data[2].tasks];
+                }
+            }
+
+            function read() {
+                const data = localStorage.getItem("data");
+
+                if(!data) {
+                    return [
+                        {columnId: 0, tasks:[]},
+                        {columnId: 1, tasks:[]},
+                        {columnId: 2, tasks:[]}
+                    ]
+                }
+
+                return JSON.parse(data);
+            }
+
+            function save() {
+                localStorage.setItem("data", JSON.stringify(data))
+            }
+
+        script.js
+            import Kanban from './kanban.js';
+
+            Kanban.updateTask(97522, {
+                columnId: 0,
+                content: "Record Kanabn preview"
+            });
+
+
+    Etape 3 : Ajout de la modification + test dans console.log()
+
+        Après avoir tout update, il faut appeler save(data)
+        kanban.js : 
+            export default class Kanban {
+                static getTasks(columnId) {
+                    const data = read().find(column => {
+                        return column.columnId == columnId
+                    })
+                    
+                    return data.tasks;
+                }
+
+                static insertTask(columnId, content) {
+                    const data = read();
+
+                    // I can have access to the column in which I can add data
+                    const column = data.find(column => {
+                        return column.columnId == columnId
+                    });
+
+                    const task = {
+                        taskId: Math.floor(Math.random() * 100000),
+                        content: content
+                    }
+
+                    column.tasks.push(task);
+                    save(data);
+
+                }
+
+                static updateTask(taskId, updatedInormation) {
+                    const data = read();
+
+                    function findColumnTask() {
+                        for(const column of data) {
+                            const task = column.tasks.find(item => {
+                                return item.taskId == taskId;
+                            });
+
+                            if(task) {
+                                return [task, column];
+                            }
+                        }
+                    }
+
+                    const[task, currentColumn] = findColumnTask();
+                    console.log(task);
+
+                    const targetColumn = data.find(column => {
+                        return column.columnId == updatedInormation.columnId;
+                    });
+
+                    task.content = updatedInormation.content;
+                    currentColumn.tasks.splice(currentColumn.tasks.indexOf(task), 1)
+                    targetColumn.tasks.push(task);
+
+                    save(data);
+                }
+
+                static deleteTask(taskId) {
+                    const data = read();
+
+                    for(const column of data) {
+                        const task = column.tasks.find(item => {
+                            return item.taskId == taskId
+                        });
+
+                        column.tasks.splice(column.tasks.indexOf(task), 1);
+                    }
+
+                    save(data)
+                }
+
+                static getAllTasks() {
+                    const data = read();
+                    return [data[0].tasks, data[1].tasks, data[2].tasks];
+                }
+            }
+
+            function read() {
+                const data = localStorage.getItem("data");
+
+                if(!data) {
+                    return [
+                        {columnId: 0, tasks:[]},
+                        {columnId: 1, tasks:[]},
+                        {columnId: 2, tasks:[]}
+                    ]
+                }
+
+                return JSON.parse(data);
+            }
+
+            function save() {
+                localStorage.setItem("data", JSON.stringify(data))
+            }
+
+        script.js :
+            console.log(Kanban.getAllTasks());
+            Kanabn.updateTask(97522, {
+                columnId: 2,
+                content: "Record JavaScript Preview"
+            });
+
+            console.log(Kanban.getAllTasks());
+
+Video 8 : Task Card
+    
+    Etape 1 : recupérer toutes nos tâches
+        script.js :
+
+            import Kanban from "./kanban.js";
+            /**
+                Pour recupérer, on appel la fonction getAllTasks(). 
+                Ensuite, on fait une boucle forEach() sur chaque tâche et on l'ajoute comme card.
+                    card est le contenu de notre tâche sur notre kanban 
+                Enfin, cette boucle retournera une liste.
+
+                La deuxième boucle, accède à chaque tâche individuellemnt.
+            */
+            Kanban.getAllTasks().forEach((tasks, index) => {
+                tasks.forEach(task => {
+                    addTaskCard(task, index);
+                })
+            })
+
+    Etape 2 : On crée des variables pour faciliter notre parcours 
+        script.js :
+            import Kanban from "./kanban.js";
+
+            const todo = document.querySelector(".cards.todo");
+            const pending = document.querySelector(".cards.pending");
+            const completed = document.querySelector(".cards.completed");
+
+            // Les variables qui sont créees servirons dans un tableau. 
+            // Il permettront à la boucle de facilement faire le parcours
+            // Par exemple, si on a toutes les tâches à l'index 1, on fait référence à todo
+            > taskbox[1] = todo qui est notre index dans la boucle !
+
+            const taskbox = [todo, pending, completed];
+
+            /**
+                Pour recupérer, on appel la fonction getAllTasks(). 
+                Ensuite, on fait une boucle forEach() sur chaque tâche et on l'ajoute comme card.
+                    card est le contenu de notre tâche sur notre kanban 
+                Enfin, cette boucle retournera une liste.
+
+                La deuxième boucle, accède à chaque tâche individuellemnt.
+            */
+            Kanban.getAllTasks().forEach((tasks, index) => {
+                tasks.forEach(task => { })
+            })
+
+    Etape 3 : On crée une fonction pour récuperer nos variables dans la boucle
+
+        script.js :
+
+            import Kanban from "./kanban.js";
+
+            const todo = document.querySelector(".cards.todo");
+            const pending = document.querySelector(".cards.pending");
+            const completed = document.querySelector(".cards.completed");
+
+            // Les variables qui sont créees servirons dans un tableau. 
+            // Il permettront à la boucle de facilement faire le parcours
+            // Par exemple, si on a toutes les tâches à l'index 1, on fait référence à todo
+            > taskbox[1] = todo qui est notre index dans la boucle !
+
+            const taskbox = [todo, pending, completed];
+
+            // Cette fonction permet de créer un formulaire card, 
+            // et d'ajouter dans notre htlm une tâche
+            function addTaskCard(task, index) {
+                const elt = document.createElement("form");
+                elt.className = "card";
+                elt.draggable = true;
+                elt.dataset.id = task.taskId
+                elt.innerHTML = `
+                    <input value="${task.content}" type="text" name="task" autocomplete="off" disabled="disabled">
+                    <div>
+                        <span class="task-id">#${task.taskId}</span>
+                        <span>
+                            <button class="bi bi-pencil edit" data-id="${task.taskId}"></button>
+                            <button class="bi bi-check-lg update hide" data-id="${task.taskId}"></button>
+                            <button class="bi bi-trash3 delete" data-id="${task.taskId}"></button>
+                        </span>
+                    </div>
+                `;
+                taskbox[index].appendChild(elt);
+            }
+
+            /**
+                Pour recupérer, on appel la fonction getAllTasks(). 
+                Ensuite, on fait une boucle forEach() sur chaque tâche et on l'ajoute comme card.
+                    card est le contenu de notre tâche sur notre kanban 
+                Enfin, cette boucle retournera une liste.
+
+                La deuxième boucle, accède à chaque tâche individuellemnt.
+            */
+            Kanban.getAllTasks().forEach((tasks, index) => {
+                tasks.forEach(task => { })
+            })
+
+        // Dans le fichier kanban.js, ajouter un console.log() pour voir l'aperçu
+            Ajouter ceci vers la fin du code :
+                console.log(Kanban.insertTask(0, "Record Kanban App"));
+
+        index.html :
+            // Dans notre fichier, nous allons supprimer le card qui est dans.
+
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="U-XA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width initial-scale=1.0">
+                    <title> Kanban Application </title>
+
+                    <link rel="stylesheet" href="style.css">
+                </head>
+
+                <body>
+                    <main>
+                        <div class="outer-wrap">
+                            <div class="inner-wrap">
+                                <section class="heading">
+                                    <p class="title">Kanban Application</p>
+                                    <p class="subtitle"> Web Based Kanban Style Application To Handle Project Progress</p>
+                                </section>
+
+                                <section class="Kanban">
+                                    <div class="taskbox">
+                                        <div class="title">
+                                            <p>TODO</p>
+                                            <span class="todo">2</span>
+                                        </div>
+                                        <div class="cards todo">
+                                        
+                                            Voici ce qu'il faut supprimer, 
+                                                le faire également pour Pending & Completed
+                                        <!--
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off" value="Record Burger Site Web" disabled="disabled">
+                                                <div>
+                                                    <span class="task-id">#97522</span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off" value="Record Kanban Project" disabled="disabled">
+                                                <div>
+                                                    <span class="task-id">#7243</span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        -->
+                                        </div>
+                                        <form class="add">
+                                            <input type="text" name="task" value="New Task" autocomplete="off" maxlength="30">
+                                            <button class="bi bi-plus" data-id="" name="submit"></button>
+                                        </form>
+                                    </div>
+
+                                    <div class="taskbox">
+                                        <div class="title">
+                                            <p>IN PROGRESS</p>
+                                            <span class="pending">1</span>
+                                        </div>
+                                        <div class="cards pending">
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off" value="System Design Notes" disabled="disabled">
+                                                <div>
+                                                    <span class="task-id">#97522</span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <form class="add">
+                                            <input type="text" name="task" value="New Task" autocomplete="off" maxlength="30">
+                                            <button class="bi bi-plus" data-id="" name="submit"></button>
+                                        </form>
+                                    </div>
+
+                                    <div class="taskbox">
+                                        <div class="title">
+                                            <p>COMPLETED</p>
+                                            <span class="completed">2</span>
+                                        </div>
+                                        <div class="cards completed">
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off" value="Budget Manager" disabled="disabled">
+                                                <div>
+                                                    <span class="task-id">#14377</span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                            <form class="card">
+                                                <input type="text" name="task" autocomplete="off" value="Portfolio" disabled="disabled">
+                                                <div>
+                                                    <span class="task-id">#23030</span>
+                                                    <span>
+                                                        <button class="bi bi-pencil edit" data-id=""></button>
+                                                        <button class="bi bi-check-lg update hide" data-id=""></button>
+                                                        <button class="bi bi-trash3 delete" data-id=""></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <form class="add">
+                                            <input type="text" name="task" value="New Task" autocomplete="off" maxlength="30">
+                                            <button class="bi bi-plus" data-id="" name="submit"></button>
+                                        </form>
+                                    </div>
+
+                                </section>
+                            </div>
+                        </div>
+                    </main>
+
+                    <script type="module" src="script.js"></script>
+                </body>
+            </html>
+
+Video 9 : Task Count 
+    /* 
+        Dans cette vidéo nous allons recuperer le nombre des tâches qui se trouve dans notre cards,
+        ensuite donner dynamiquement un nombre en fonction de ce qu'il y a dans notre card.
+        Par exemple : 
+            Si dans le card TODO, il y a 2 tâches, eh bien, il affiche 2.
+            Le 2 se trouve à droite de notre titre du card.
+    */
+    Etape 1 : Ajouter la fonction columnCount()
+        kanban.js : 
+            function columnCount() {
+
+                // On recupère nos infos de localStorage
+                const data = read();
+
+                // On recupère dans le html la balise correspondant et ensuite, on prend la longueur de la tâche comme c'est un tableau
+                const todo = document.querySelector("span.todo");
+                todo.textContent = data[0].tasks.length;
+
+                const pending = document.querySelector("span.pending");
+                pending.textContent = data[1].tasks.length;
+
+                const completed = document.querySelector("span.completed");
+                completed.textContent = data[2].tasks.length;
+            }
+
+    Etape 2 : Ajouter ceci dans la fonction save & getAllTasks
+        kanban.js : 
+            export defaut class Kanban {
+                    // Pas besoin d'écrire les autres static, 
+                    // rien ne change et les codes sont identiques aux précédents !
+
+                    // Ici la modification se fait sur getAllTasks()
+                    static getAllTasks() {
+                    const data = read();
+                    columnCount()
+                    return [data[0].tasks, data[1].tasks, data[2].tasks];
+                }
+            } 
+
+            function save(data) {
+                localStorage.setItem("data", JSON.stringify(data));
+                columnCount();
+            }
+
+Video 10 : Form Add Task 
+    Etape 1 : On crée notre variable pour récuperer nos champs input
+        script.js : 
+        const addForm = document.querySelectorAll(".add");
+
+    Etape 2 : On crée un evenement pour envoyer les entrées dans input 
+        script.js : 
+            const addForm = document.querySelectorAll(".add");
+            // form.submit.dataset.id = permet d'acceder à notre id
+            // form.task.value = ceci est notre input (là où l'utilisateur écrit)
+
+            /*
+                let me give you a quick revision. 
+                We first try to select all the forms try to use for each to get the individual form and then added a event listener for type summit, 
+                    prevented the default thing inserted the task in our local storage. 
+                With this method, get a return task stored that as a reference now call the add card functionality. 
+                Pass the task as well as pass the column information that is done. 
+                Card is added, reset the form, that's it. But there is only one thing.
+
+                const addForm = document.querySelectorAll(".add");
+                // form.submit.dataset.id = permet d'acceder à notre id
+                // form.task.value = ceci est notre input (là où l'utilisateur écrit)
+
+                addForm.forEach(form => {
+                    form.addEventListener("submit", event => {
+                        event.preventDefault();
+                        const task = Kanban.insertTask(form.submit.dataset.id, form.task.value);
+
+                        // On appel notre fonction qui aura 2 paramètre, task & l'id où il doit ajouter. 
+                        // L'id permet d'être sur la bonne colonne et ajouter les informations qui seront écrites par l'utilisateur
+                        addTaskCard(task, form.submit.dataset.id);
+
+                        // Ensuite on fait un reset(), pour que le'entrée soit vide
+                        form.reset();
+                    })
+                })
+            */
+            addForm.forEach(form => {
+                form.addEventListener("submit", event => {
+                    event.preventDefault();
+                    const task = Kanban.insertTask(form.submit.dataset.id, form.task.value);
+
+                    // On appel notre fonction qui aura 2 paramètre, task & l'id où il doit ajouter. 
+                    // L'id permet d'être sur la bonne colonne et ajouter les informations qui seront écrites par l'utilisateur
+                    addTaskCard(task, form.submit.dataset.id);
+
+                    // Ensuite on fait un reset(), pour que le'entrée soit vide
+                    form.reset();
+                })
+            })
+
+        HTML : 
+            Dans le fichier html, rajouter data-id = "0" pour le form qui se trouve dans la classe taskbox.
+            Voici un exemple :
+                Task TODO
+                    <div class="taskbox">
+                        ...
+                        <form class="add">
+                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                            <button class="bi bi-plus" data-id="0" name="submit"></button>
+                        </form>
+                    </div>
+                
+                Task In progress
+                    <div class="taskbox">
+                        ...
+                        <form class="add">
+                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                            <button class="bi bi-plus" data-id="0" name="submit"></button>
+                        </form>
+                    </div>
+
+                Task Completed
+                    <div class="taskbox">
+                        ...
+                        <form class="add">
+                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                            <button class="bi bi-plus" data-id="0" name="submit"></button>
+                        </form>
+                    </div>
+
+            Ceci doit être fait dans le fichier index.html, et nous n'avons pas besoin de rajouter tout le contenu ici.
+            A toi, de t'amuser un peu :D ! 
+
+    Etape 3 : On améliore le code pour éviter les espaces ou tout autre erreur 
+        Le reste du code avant l'evenement addForm.forEach(...) n'a pas changé.
+            Quand vous allez refaire le projet, comprenez que parfois nous n'avons pas besoin d'écrire tout.
+            Et surtout, si on s'occupe d'une fonction particulière pas besoin d'écrire tout.
+
+            Mercii pour ta compréhension champion, amuse-toi bien :D ! 
+
+        On rajoute la condition if(form.task.value) {...} : pour éviter les espaces 
+
+            // form.submit.dataset.id = permet d'acceder à notre id
+            // form.task.value = ceci est notre input (là où l'utilisateur écrit)
+            // trim() = permet de supprimer les espaces
+
+        script.js :
+            const addForm = document.querySelectorAll(".add");
+
+            addForm.forEach(form => {
+                form.addEventListener("submit", event => {
+                    event.preventDefault();
+                    if(form.task.value.trim()) {
+                        const task = Kanban.insertTask(form.submit.dataset.id, form.task.value);
+
+                        // On appel notre fonction qui aura 2 paramètre, task & l'id où il doit ajouter. 
+                        // L'id permet d'être sur la bonne colonne et ajouter les informations qui seront écrites par l'utilisateur
+                        // form.submit.dataset.id.trim() : trim() permet de supprimer les espaces !
+                        addTaskCard(task, form.submit.dataset.id.trim());
+
+                        // Ensuite on fait un reset(), pour que le'entrée soit vide
+                        form.reset();
+                    } else {
+                        alert("You must write something !");
+                    }
+                })
+            })
+
+Video 11 : Form Edit Task
+
+    // Nous allons ajouter ce code juste après addForm(...) 
+
+    // Nous nous basons sur ce code pour comprendre, ce que nous allons faire dans taskbox.forEach(...) !
+        function addTaskCard(task, index) {
+            const elt = document.createElement("form");
+            elt.className = "card";
+            elt.draggable = true;
+            elt.dataset.id = task.taskId
+            elt.innerHTML = `
+                <input value="${task.content}" type="text" name="task" autocomplete="off" disabled="disabled">
+                <div>
+                    <span class="task-id">#${task.taskId}</span>
+                    <span>
+                        <button class="bi bi-pencil edit" data-id="${task.taskId}"></button>
+                        <button class="bi bi-check-lg update hide" data-id="${task.taskId}"></button>
+                        <button class="bi bi-trash3 delete" data-id="${task.taskId}"></button>
+                    </span>
+                </div>
+            `;
+            taskbox[index].appendChild(elt);
+        }
+
+    Etape 1 : On a accès à nos colonne par un click en créant un evenement
+        script.js :
+            taskbox.forEach(column => {
+                column.addEventListener("click", event => {
+                    event.preventDefault();
+                    
+                    /* 
+                        Ceci pour supprimer ou modifier l'information.
+                        Ici, quand on clic sur le bouton de l'icône pour modifier, 
+                            on accède à input pour enlever disabled et l'enlever.
+                            Voir l'étape 2
+                    */
+                    if(event.target.classList.contains("edit")) {
+
+                    }
+
+                    // if pour suivre l'autre condition !
+                    if() {
+
+                    }
+                })
+            })
+
+    Etape 2 : Ajouter les fonctionnalités pour faire la modification
+        
+        script.js 
+            2.1 On supprime disabled dans input
+                taskbox.forEach(column => {
+                    column.addEventListener("click", event => {
+                        event.preventDefault();
+                        
+                        /* 
+                            Ici, on supprime disabled dans input
+                        */
+                        if(event.target.classList.contains("edit")) {
+                            event.target.parentElement.parentElement.previousElementSibling.removeAttribute("disabled");
+                        }
+
+                    })
+                })
+
+            2.2 On cache le bouton
+                taskbox.forEach(column => {
+                    column.addEventListener("click", event => {
+                        event.preventDefault();
+                        
+                        /* 
+                            Ici, après suppression de l'attribut, on cache le bouton
+                        */
+                        if(event.target.classList.contains("edit")) {
+                            event.target.parentElement.parentElement.previousElementSibling.removeAttribute("disabled");
+                            event.target.classList.add("hide");
+                        }
+
+                    })
+                })
+
+            2.3 On passe par le bouton suivant dans la balise et on efface hide 
+                taskbox.forEach(column => {
+                    column.addEventListener("click", event => {
+                        event.preventDefault();
+                        
+                        /* 
+                            Ici, après suppression de l'attribut, on cache le bouton.
+                            Après avoir cacher, on passe au prochain bouton (nextElementSibling)
+                            et on l'affiche en effaçant le hide
+                        */
+                        if(event.target.classList.contains("edit")) {
+                            event.target.parentElement.parentElement.previousElementSibling.removeAttribute("disabled");
+                            event.target.classList.add("hide");
+                            event.target.nextElementSibling.classList.remove("hide");
+
+                        }
+
+                    })
+                })
+
+            2.4 On s'occupe du second if(){...}
+                taskbox.forEach(column => {
+                    column.addEventListener("click", event => {
+                        event.preventDefault();
+                        
+                        /* 
+                            Ici, pas besoin d'écrire le premier if(...){...}
+                            Vous pouvez le voir dans la partie 2.3 !
+                        */
+                        if(event.target.classList.contains("edit")) { ... }
+
+                        /*
+                            1er event.target.parentElement ... setAttribut("disabled");
+                                La première étape, on recupère ce qu'on a fait précédemment en changeant l'attribut en disabled.
+                                Pourquoi ? Parce que nous l'avons supprimer et donc, on le ramène à son état initial "disabled"
+
+                            2ième event.target 
+                                On efface le "hide" pour avoir accès au bouton 
+                            
+                            3ième event.target  
+                                On affiche le bouton et on fait previous parce que nous revenons à edit pour le garder cacher               
+                        */
+                        if(event.target.classList.contains("update")) {
+                            event.target.parentElement.parentElement.previousElementSibling.setAttribute("disabled");
+                            event.target.classList("hide");
+                            event.target.previousElementSibling.classList.remove("hide");
+                        }
+                    })
+                })
+
+            2.5 ajout de updateTask() et modification de notre html 
+                Rajouter ceci : 
+                    <button class="bi bi-check-lg update hide" data-id="${task.taskId}" data-column="${index}"></button>
+                Dans la fonction addTaskCard() dans le span et remplacer l'ancien "update hide"
+                Vous avez compris, pas la peine de retaper tous les autres. 
+                Et le " ... " remplace tous les autres éléments. 
+                
+                function addTaskCard(task, index) {
+                    ...
+                    <span>
+                        <button class="bi bi-check-lg update hide" data-id="${task.taskId}" data-column="${index}"></button>
+                    </span>
+                }
+
+                On revient dans taskbox.forEach()
+
+                taskbox.forEach(column => {
+                    column.addEventListener("click", event => {
+                        event.preventDefault();
+                        
+                        /* 
+                            Ici, pas besoin d'écrire le premier if(...){...}
+                            Vous pouvez le voir dans la partie 2.3 !
+                        */
+                        if(event.target.classList.contains("edit")) { ... }
+
+                        /*
+                            1er event.target.parentElement ... setAttribut("disabled");
+                                La première étape, on recupère ce qu'on a fait précédemment en changeant l'attribut en disabled.
+                                Pourquoi ? Parce que nous l'avons supprimer et donc, on le ramène à son état initial "disabled"
+
+                            2ième event.target 
+                                On efface le "hide" pour avoir accès au bouton 
+                            
+                            3ième event.target  
+                                On affiche le bouton et on fait previous parce que nous revenons à edit pour le garder cacher               
+                        */
+                        if(event.target.classList.contains("update")) {
+                            event.target.parentElement.parentElement.previousElementSibling.setAttribute("disabled");
+                            event.target.classList("hide");
+                            event.target.previousElementSibling.classList.remove("hide");
+
+                            //  On recupère notre id, colonne et le contenu
+                            //  dataset : permet d'avoir accès à notre localStorage 
+                            const taskId    = event.target.dataset.id;
+                            const columnId  = event.target.dataset.column;
+                            const content   = event.target.parentElement.parentElement.previousElementSibling.value.trim();
+                            
+                            //  Pour voir notre contenu, on peut l'afficher 
+                            console.log(taskId, columnId, content);
+
+                            //  On appel notre updateTask 
+                            Kanban.updateTask(taskId, {
+                                columnId: columnId, 
+                                content: content
+                            })
+                        }
+                    })
+                })
+
+                // Dans notre taskbox, on peut rajouter une variable formInput et mettre parentElement.parentElement.previousElementSibling
+                    const formInput = parentElement.parentElement.previousElementSibling;
+                    const dataSetLocalStorage = event.target.dataset
+
+    Etape 3 : Le code de taskbox.forEach(...)
+
+        script.js :
+            Ici, vous avez les modifications complètes de ce qui ont été faites 
+
+                function addTaskCard(task, index) {
+                    const elt = document.createElement("form");
+                    elt.className = "card";
+                    elt.draggable = true;
+                    elt.dataset.id = task.taskId
+                    elt.innerHTML = `
+                        <input value="${task.content}" type="text" name="task" autocomplete="off" disabled="disabled">
+                        <div>
+                            <span class="task-id">#${task.taskId}</span>
+                            <span>
+                                <button class="bi bi-pencil edit" data-id="${task.taskId}"></button>
+                                <button class="bi bi-check-lg update hide" data-id="${task.taskId}" data-column="${index}"></button>
+                                <button class="bi bi-trash3 delete" data-id="${task.taskId}"></button>
+                            </span>
+                        </div>
+                    `;
+                    taskbox[index].appendChild(elt);
+                }
+
+                taskbox.forEach(column => {
+                    column.addEventListener("click", event => {
+                        event.preventDefault();
+                        
+                        if(event.target.classList.contains("edit")) {
+                            event.target.parentElement
+                                .parentElement
+                                .previousElementSibling
+                                .removeAttribute("disabled");
+
+                            event.target.classList.add("hide");
+                            event.target.nextElementSibling.classList.remove("hide");
+                        }
+
+                        if(event.target.classList.contains("update")) {
+                            event.target.parentElement.parentElement.previousElementSibling.setAttribute("disabled", "disabled");
+                            event.target.classList.add("hide");
+                            event.target.previousElementSibling.classList.remove("hide");            
+                        
+                            const taskId    = event.target.dataset.id;
+                            const columnId  = event.target.dataset.column;
+                            const content   = event.target.parentElement.parentElement.previousElementSibling.value.trim();
+                                                    
+                            console.log(taskId, columnId, content);
+
+                            Kanban.updateTask(taskId, {
+                                columnId: columnId, 
+                                content: content
+                            })
+                        }
+                    })
+                })
+
+
+Video 12 : Form Delete Task
+    Etape 1 : On rajoute encore dans taskbox
+        /* 
+            Deux chose à retenir, quand on clic sur le bouton delete, on supprimer le card.
+                Rappel, le card c'est l'endroit qui permet à l'utilisateur d'inserer les infos.
+
+            Et ensuite, on appel la methode delete dans la class Kanban{ ... }
+
+            Et enfin, modifier la methode delete de la class 
+        */
+        kanban.js : 
+            //  On s'occupe que de notre deleteTask, les autres fonctions sont correctes 
+            export default class Kanban {
+                static deleteTask(taskId) {
+                    const data = read();
+
+                    for(const column of data) {
+                        const task = column.tasks.find(item => {
+                            return item.taskId == taskId;
+                        });
+
+                        // On rajoute la condition pour être sur une seule colonne et, 
+                            on supprimera seulement la tâche que nous voulons ou selectionner
+                        if(task) {
+                            column.tasks.splice(column.tasks.indexOf(task), 1);
+                        }
+                    }
+
+                    save(data);
+                }
+            }
+
+        script.js :
+            taskbox.forEach(column => {
+                column.addEventListener("click", event => {
+                    event.preventDefault();
+                    const formInput = event.target.parentElement.parentElement.previousElementSibling;
+
+                    if(event.target.classList.contains("edit")) { ... }
+
+                    if(event.target.classList.contains("update")) { ... }
+                    
+                    if(event.target.classList.contains("delete")) {
+                        // Ici, on recupère le formulaire comme celui le parent
+                        formInput.parentElement.remove();
+
+                        //  Une fois le formulaire recuperer, on le supprime et dans le localStorage,
+                            dataset.id, permet de recuperer l'id correspondant et supprime la tâche !
+                        Kanban.deleteTask(event.target.dataset.id);
+                    }
+
+                })
+            })
+
+Video 13 : Drag-drop Task Card
+    //  Petite explication pour cette partie 
+    /*  Ceci est l'explication de ce qui sera fait par le formateur Shubham Sarda,
+            Si vous êtes arrivé jusqu'ici, eh bien, bravo :D !
+        
+        Vous pouvez prendre le temps de lire et comprendre mieux en regardant la vidéo !
+        Amusez-vous en codant, :D !
+
+        Version française 
+
+            00:00:00
+            Bonjour à tous. Bienvenue à nouveau. 
+            Nous arrivons maintenant à l'étape la plus intéressante, 
+                celle où nous allons travailler avec le glisser-déposer (Drag-drop). 
+            Il y a plusieurs choses que vous allez comprendre. 
+            
+            Si je passe à notre démo, 
+                il y a trois choses. La première est le début du glisser-déposer. 
+            Si je clique ici, le glisser-déposer commence. 
+
+            La deuxième est le glisser-déposer. C'est ici que le glisser-déposer fonctionne.
+
+            00:00:24
+            Et le troisième élément est la fin du glissement. 
+            Si je le laisse ici, notre glissement est terminé. 
+            Nous devons donc travailler avec trois écouteurs d'événements. 
+            Le début du glissement comme ceci, le glissement comme ceci et la fin du glissement comme ceci.
+
+
+            00:00:40
+            Quand je parle de drag start en arrière-plan, ce que je fais, 
+                c'est que j'ajoute une nouvelle classe à l'ensemble de cette carte et je l'appelle dragging. 
+            Cela signifie que cette carte est unique parmi toutes les cartes. 
+            Vous pouvez donner un autre nom à la classe, 
+                mais cette carte est désormais unique par rapport à toutes les autres cartes.
+
+
+            00:01:00
+
+            Et je peux identifier la carte que je fais glisser grâce à la classe dragging. 
+            Donc, quand je dis « drag start », 
+                cela signifie essentiellement que 
+                    j'ai inclus une nouvelle classe en arrière-plan appelée « dragging ». 
+                    Je vais vous faire une démonstration à l'aide de l'outil « inspect ». 
+                    Si je clique ici sur « inspect », ce formulaire, regardez bien ce formulaire. 
+                    
+            Si je prends ceci, vous pouvez voir la partie « dragging », 
+                vous pouvez voir que j'ai une nouvelle classe « dragging » ici. 
+            Jesse dragging est ajouté. Maintenant, ceci est important.
+
+
+            00:01:40
+            J'ai une identité unique. Maintenant, qu'est-ce que j'entends par « glisser-déposer » ? 
+            Eh bien, glisser-déposer signifie que si j'ajoute glisser-déposer 
+                ici, ici, ici, je peux maintenant ajouter glisser-déposer. 
+            Je peux vérifier que si j'obtiens une nouvelle carte avec la classe dragging, 
+            je vais l'ajouter ici. C'est tout.
+
+            00:02:01
+            C'est ma tâche, je vais ajouter cette section de carte et je vais ajouter que cela va être glissé. 
+            Donc, si je dis ici, vous pouvez voir en arrière-plan, c'est visible. 
+            Vous pouvez voir que j'ai une carte qui est incluse à l'aide d'un stylo.
+
+
+            00:02:20
+            Disons ici glisser ici glisser. Ce sera ma tâche avec glisser. 
+            Maintenant, ce que j'entends par « fin du glissement ». Disons que je commence à glisser. 
+            Maintenant, si je pars, c'est la fin du glissement et quand je pars, 
+                je vais supprimer la classe « glissement » 
+                et je vais également appeler la mise à jour de la tâche.
+
+
+            00:02:43
+            La tâche est mise à jour. 
+            Notre stockage local est mis à jour et notre compteur est également mis à jour. 
+            Si vous observez, actuellement, le compteur n'est pas mis à jour parce que c'est un glissement. 
+            Mais dès que je pars, mon compteur est mis à jour partout. 
+            J'espère que vous avez compris l'idée. 
+            Cela va être amusant et nous devons le mettre en œuvre.
+
+
+            00:03:03
+            Mais avant cela, laissez-moi ajouter quelques exemples, disons l'exemple quatre, 
+            l'exemple cinq, et nous allons commencer. 
+            Disons que tout est bon. Laissez-moi venir ici.
+
+        Version anglaise 
+
+            00:00:00
+            Hey there. Welcome back. Now, we are on the most interesting stage where we are going to work with dragging. Now, there are multiple things that you're going to understand. So if I jump on to our demo, there are three things. The first thing is drag start. So if I click on this, our drag is started. The second thing is drag over. This is where drag over things work.
+
+
+            00:00:24
+            And the third thing is drag end. So if I leave it here, our drag is end. So we need to work with three event listeners. Drag start like this drag over like this and drag end like this.
+
+
+            00:00:40
+            Now when I say drag start behind the scene, what I do is I add a new class to this whole thing card and I call this as dragging. So that means this card is unique among all of the card. You can call the class name something else, but this card is now unique than all the other card.
+
+
+            00:01:00
+            And I can identify which card I'm dragging with the class dragging. So when I'm going to say drag start, I basically means that I have included a new class behind the scene called as dragging. Let me give you a demo with the help of inspect. So if I click on inspect here,
+
+
+            00:01:23
+            this form, just keep an eye on this form. If I take this, you can see the dragging part, you can see I have a new class dragging here. Jesse dragging is added. Now, this is important.
+
+
+            00:01:40
+            I have a unique identity. Now what I mean by drag over? Well, drag over means that if I add drag over here here here, now I can add drag over. I can keep a check that if I get a new card with class dragging, I'm going to add it here. That's it.
+
+
+            00:02:01
+            That's my task that I am going to append this card section and I'm going to add that that is going to be drag over. So if I say here, you can see behind the scene, it is visible. You can see I have a card which is included with the help of a pen.
+
+
+            00:02:20
+            Let's say here drag over here drag over. That is going to be my task with drag over. Now what I mean by drag end. So let's say drag start drag over. Now if I leave, that is drag end and when I leave, I am going to remove the class dragging and I'm also going to call update task
+
+
+            00:02:43
+            task is updated. Our local storage is updated and our count is also updated. If you observe currently count is not updated because it's drag over. But as soon as I leave my count is updated everywhere. So I hope you got the idea. This is going to be fun and we need to implement it.
+
+
+            00:03:03
+            But before that, let me also add few sample stuff, let's say sample fourth, sample five and we are going to start stuff. Let's say refresh things are good. Let me get here.
+
+    */
+
+3 choses qui seront faites :
+    - Commencer par cliquer sur notre tâche pour faire la glissade ou le déplacement !
+    - Déplacer la tâche sélectionner soit vers la gauche ou droite (si la tâche était au milieu)
+        Cela signifie que si c'était la tâche de TODO/Completed, on le déplace sur les 2 autres
+    - Déposer la tâche que nous avons sélectionner soit dans TODO, inProgress ou Completed
+
+    Le formateur dans la vidéo parle de : 
+        drag start (quand on clic sur la tâche),
+        drag over  (quand on déplace la tâche),
+        drag end   (quand on déposer la tâche) 
+
+    Il faudra également mettre à jour les nombres de tâches ajouter ou enlever dans notre card !
+
+Etape 1 : Drag start
+    Commencer par faire la glissade ou le déplacement de ce que l'on sélectionne
+        Les modifications seront toujours fait dans notre taskbox.forEach()
+
+    script.js:
+        taskbox.forEach(column => {
+            column.addEventListener("click", event => {
+                event.preventDefault();
+
+                const formInput = event.target.parentElement.parentElement.previousElementSibling;
+
+                if(event.target.classList.contains("edit")) { ...}
+
+                if(event.target.classList.contains("update")) {...}
+
+                if(event.target.classList.contains("delete")) {...}
+            });
+
+            // On crée un evenement sur notre colonne pour faire la glissade ou déplacement
+            column.addEventListener("dragstart", event => {
+                if(event.target.classList.contains("card")){
+                    event.target.classList.add("dragging");
+                }
+            })
+        })
+
+Etape 2 : Drag over
+Dans CSS, rajoute ceci : 
+    style.css :
+        .card.dragging {
+            opacity: 0.4;
+        }
+
+Dans cette étape, nous cherchons à ajouter une tâche dans une autre card
+    script.js:
+        taskbox.forEach(column => {
+            column.addEventListener("click", event => {
+                event.preventDefault();
+
+                const formInput = event.target.parentElement.parentElement.previousElementSibling;
+
+                if(event.target.classList.contains("edit")) { ...}
+
+                if(event.target.classList.contains("update")) {...}
+
+                if(event.target.classList.contains("delete")) {...}
+            });
+
+            // On crée un evenement sur notre colonne pour faire la glissade ou déplacement
+            column.addEventListener("dragstart", event => {
+                if(event.target.classList.contains("card")){
+                    event.target.classList.add("dragging");
+                }
+            })
+
+            // On ajoute quand on déplace une tâche dans un card 
+            column.addEventListener("dragover", event => {
+                const card  = document.querySelector(".dragging");
+                column.appendChild(card);
+            })
+        })
+
+Etape 3 : Drag end
+    index.html :
+        Dans le fichier HTML, rajouter data-id dans les cards pour TODO, In Progress & Completed
+        Pour TODO : <div class="cards todo" data-id="0">
+        Pour In progress :  <div class="cards todo" data-id="1">
+        Pour Completed :    <div class="cards todo" data-id="2">
+        Ces balises se trouvent dans la taskbox, voici un exemple pour TODO et le reste est à faire soi-même :D !
+        
+            TODO
+                <div class="taskbox">
+                    <div class="title">
+                        <p>TODO</p>
+                        <span class="todo">2</span>
+                    </div>
+                    <div class="cards todo" data-id="0">                        
+                    </div>
+                    <form class="add">
+                        <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                        <button class="bi bi-plus" data-id="0" name="submit"></button>
+                    </form>
+                </div>
+
+    script.js :
+        /*  Petite explication 
+            Dans cette étape, on va premièrement créer l'evenement pour sélectionner la tâche, 
+                ensuite, on crée une condition qui vérifie si l'on dépose notre tâche et si c'est vrai, 
+                    Eh bien, notre tâche est déposé dans un card (card peut être TODO, InProgress & Completed). 
+
+                Si, tout a été bien fait, on supprimer la class dragging avec : .classList.remove("dragging").
+                On appel ensuite, la methode updateTask(), c'est pour enregistrer les modifications.
+                Une fois que la tâche est ajouté, nous allons récuperer l'id parent du card, pourquoi ?
+                    Parce que cela nous permettra d'incrémenter le nombre total dans notre card.
+
+                    Par exemple : 
+                        Si on ajoute une tâche dans le card TODO, sont nombre s'il était à 2, cela augmente à 3. 
+        */    
+
+
+            taskbox.forEach(column => {
+                column.addEventListener("click", event => {
+                    event.preventDefault();
+
+                    const formInput = event.target.parentElement.parentElement.previousElementSibling;
+
+                    if(event.target.classList.contains("edit")) { ...}
+
+                    if(event.target.classList.contains("update")) {...}
+
+                    if(event.target.classList.contains("delete")) {...}
+                });
+
+                // On crée un evenement sur notre colonne pour faire la glissade ou déplacement
+                column.addEventListener("dragstart", event => {
+                    if(event.target.classList.contains("card")){
+                        event.target.classList.add("dragging");
+                    }
+                })
+
+                // On ajoute quand on déplace une tâche dans un card 
+                column.addEventListener("dragover", event => {
+                    const card  = document.querySelector(".dragging");
+                    column.appendChild(card);
+                })
+
+                3.1 //  On crée un evenement pour drag end 
+                    column.addEventListener("dragend", event => {
+                        
+                    })
+
+                3.2 //  On crée notre condition pour déposer notre tâche dans une card (TODO, par exemple)
+                    column.addEventListener("dragend", event => {
+                        if(event.target.classList.contains("card")) {
+
+                        }    
+                    })
+                
+                3.3 //  On supprimer le déplacement ou glissement
+                    column.addEventListener("dragend", event => {
+                        if(event.target.classList.contains("card")) {
+                            event.target.classList.remove("dragging");
+                        }    
+                    })
+
+                3.4 //  On crée les variables pour faire notre mise à jour quand on appel la updateTask()
+                            On crée les éléments : taskId, columnId & content.
+                            Ces éléments sont les composants principaux pour notre card.
+                            Ici, dataset.id permet de recuperer via localStorage ! 
+                    column.addEventListener("dragend", event => {
+                        if(event.target.classList.contains("card")) {
+                            event.target.classList.remove("dragging");
+
+                            //  Création des variables
+                                columnId, nous mettons parentElement parce qu'il fait le comptage total.
+                                Mais aussi, il permet de connaître dans quel card nous nous trouvons.
+                                    Exemple : si columnId 0 > TODO. Voir HTML "data-id"
+                            const taskId    = event.target.dataset.id;
+                            const columnId  = event.target.parentElement.dataset.id;
+                            const content   = event.target.task.value;
+
+                            //  Mise à jour de notre localStorage avec updateTask()
+                                On commence par taskId, parce qu'il contient le reste des données.
+                                Si on a l'id, on a le contenu
+                                    au cas où, on se le demande
+                            Kanban.updateTask(taskId, {
+                                columnId:   columnId,
+                                content:    content
+                            })
+                        }    
+                    })
+            })
+
+00:14:02
+work with dragging. And I hope you got the idea. There are a few changes that we did. The most important one is going to be that we included our data id to our cards, so we can identify which column we are working with. Remember that the second thing we did is added a new class called dragging.
+
+00:14:24
+So we have a different opacity. The third thing we did is the whole code. Basically the whole event listener to drag, start drag over, drag, end dragstart basically means we have started a dragging and we have included a dragging class
+
+
+00:14:43
+to that particular card. So it will be unique and we can add some properties drag over. Basically means that this area is allowed to drag over. And if some element or if some card with dragging class comes, we are going to add it. Now, drag N means OK, you have leave that element that you are trying to drag.
+
+
+00:15:04
+Now what you want to do. Well, we want to remove the dragging class and we want to update our local storage with the new information. That's it. That's how things are going to work and our project is ready.
+
+
+00:15:21
+So, what I'm going to do is I am going to now test it and add some sensible task. That means my task like this. So I can edit, I can write something, I can delete, I can edit, I can write something I can update, refresh. Things are working. Delete, delete, delete,
+
+
+00:15:41
+refresh from basics. I can add certain information. For example, I can add this, click on this. It's working, I can add this click on this. It's working, add another one, it's working and another one
+
+
+00:16:04
+it's working. Um Add another one. Let me remove this, add it, walk it, add it working, refresh. OK, great. So that's how we completed the whole Kanban
+
+
+00:16:22
+thing. It was important for us. We tried a lot of stuff we understood about new event listeners. We also understood to create a class, add some static function and do a lot of calculation. I hope this project was helpful. Thank you for following
+
+
+00:16:41
+and just try to fix it. And I see you guys in the next one.
